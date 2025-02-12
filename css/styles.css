@@ -1,558 +1,266 @@
-/* Estilo general del cuerpo de la página */
-body {
-    font-family:'Eras Light', sans-serif; /* Fuente principal */
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto en blanco */
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
-}
-
-/* Incluir las fuentes */
-@font-face {
+/* =======================
+   Variables de color
+========================== */
+:root {
+    --color-rojo: #e60000;
+    --color-blanco: #fff;
+    --color-negro: #000;
+  }
+  
+  /* =======================
+     Fuentes Personalizadas
+  ========================== */
+  @font-face {
     font-family: 'AF PEPSI';
     src: url('../fonts/AFPEPSI.ttf') format('truetype');
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: 'Eras Bold';
     src: url('../fonts/ErasBold.ttf') format('truetype');
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: 'Eras Demi';
     src: url('../fonts/ErasDemi.ttf') format('truetype');
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: 'Eras Light';
     src: url('../fonts/ErasLight.ttf') format('truetype');
-}
-
-/* Aplicar las fuentes */
-h1, h2, h3 {
-    font-family: 'AF PEPSI', sans-serif;
-    color: #e60000; /* Rojo predominante */
-    font-weight: 600;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-h4, h5, h6 {
-    font-family: 'Eras Bold', sans-serif;
-    color: #333;
-}
-
-p {
-    font-family: 'Eras Demi', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Estilo de los enlaces */
-a {
-    font-family: 'Eras Light', sans-serif;
-    color: #ff0000; /* Enlaces en rojo */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s ease; /* Transición suave del color */
-}
-
-/* Estilo de los enlaces al pasar el ratón */
-a:hover {
-    color: #cc0000; /* Enlaces en rojo oscuro al pasar el ratón */
-}
-
-/* Estilo del encabezado */
-.header {
-    background-image: url('../images/IMG_1596.PNG'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Abarcar todo el área del encabezado */
-    background-position: center; /* Centrar la imagen */
-    background-repeat: no-repeat; /* No repetir la imagen */
-    color: #fff; /* Texto en blanco */
-    padding: 60px 0; /* Padding superior e inferior */
-    text-align: center; /* Texto centrado */
-    position: relative; /* Posición relativa */
-}
-
-.header h1 {
-    font-size: 3rem; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente */
-    color: #fff; /* Color del texto */
-    margin: 0; /* Sin margen */
-    padding: 20px; /* Padding */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    display: inline-block; /* Mostrar como bloque en línea */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-/* Estilo de la barra de navegación */
-.navbar {
-    background-color: #000; /* Fondo negro */
-    padding: 5px 0; /* Reducir el padding superior e inferior */
-    display: flex; /* Usar flexbox */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: background 0.3s ease; /* Transición suave del fondo */
-}
-
-/* Estilo de la lista de navegación */
-.navbar .navbar-nav {
-    display: flex; /* Usar flexbox */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    width: 100%; /* Ancho completo */
-}
-
-/* Estilo de los enlaces de navegación */
-.navbar .nav-link {
-    color: #fff !important; /* Texto en blanco */
-    text-decoration: none; /* Sin subrayado */
-    margin: 0 10px; /* Reducir el margen horizontal */
-    font-size: 1.1rem; /* Aumentar el tamaño de fuente */
-    font-weight: 500; /* Peso de fuente */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave del color y fondo */
-    padding: 5px 10px; /* Reducir el padding */
-    border-radius: 5px; /* Bordes redondeados */
-    display: inline-block; /* Mostrar como bloque en línea */
-    line-height: normal; /* Altura de línea normal */
-    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
-}
-
-/* Estilo de los enlaces de navegación al pasar el ratón */
-.navbar .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente al pasar el ratón */
-    color: #fff !important; /* Texto en blanco */
-}
-
-/* Estilo del menú desplegable de la barra de navegación */
-.navbar .dropdown-menu {
-    background-color: #333; /* Fondo gris oscuro */
-    border: none; /* Sin borde */
-}
-
-/* Estilo de los elementos del menú desplegable */
-.navbar .dropdown-item {
-    color: #fff; /* Texto en blanco */
-}
-
-/* Estilo de los elementos del menú desplegable al pasar el ratón */
-.navbar .dropdown-item:hover {
-    background-color: #ff0000; /* Fondo rojo al pasar el ratón */
-    color: #fff; /* Texto en blanco */
-}
-
-/* Estilo de las imágenes de la galería */
-.gallery {
-    display: flex; /* Usar flexbox */
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    gap: 20px; /* Espacio entre los elementos */
-}
-
-/* Estilo de las imágenes de la galería */
-.gallery img {
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: transform 0.3s ease-in-out; /* Transición suave de la transformación */
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática */
-}
-
-/* Estilo de las imágenes de la galería al pasar el ratón */
-.gallery img:hover {
-    transform: scale(1.05); /* Escalar ligeramente al pasar el ratón */
-}
-
-/* Estilo de los formularios */
-form {
-    margin: 30px auto; /* Margen superior e inferior, centrado horizontalmente */
-    max-width: 600px; /* Ancho máximo */
-    padding: 20px; /* Padding */
-    background: #fff; /* Fondo blanco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    border-radius: 8px; /* Bordes redondeados */
-}
-
-/* Estilo de los botones */
-button {
-    background-color: #ff0000; /* Fondo rojo */
-    color: #fff; /* Texto en blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Padding */
-    font-size: 1rem; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de puntero */
-    transition: background-color 0.3s ease; /* Transición suave del fondo */
-}
-
-/* Estilo de los botones al pasar el ratón */
-button:hover {
-    background-color: #cc0000; /* Fondo rojo oscuro al pasar el ratón */
-}
-
-/* Estilo de los botones secundarios */
-.btn-secondary {
-    background-color: #333; /* Fondo gris oscuro */
-    color: #fff; /* Texto en blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Padding */
-    font-size: 1rem; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de puntero */
-    transition: background-color 0.3s ease; /* Transición suave del fondo */
-}
-
-/* Estilo de los botones secundarios al pasar el ratón */
-.btn-secondary:hover {
-    background-color: #555; /* Fondo gris medio al pasar el ratón */
-}
-
-.btn-action {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-action:hover {
-    background-color: #cc0000;
-}
-
-/* Estilo del pie de página */
-footer {
-    background-color: #333; /* Fondo gris oscuro */
-    color: #fff; /* Texto en blanco */
-    padding: 20px 0; /* Padding superior e inferior */
-    text-align: center; /* Texto centrado */
-    font-family: 'Eras Light', sans-serif; /* Fuente */
-}
-
-/* Estilo de los enlaces en el pie de página */
-footer a {
-    color: #ff0000; /* Enlaces en rojo */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s ease; /* Transición suave del color */
-}
-
-/* Estilo de los enlaces en el pie de página al pasar el ratón */
-footer a:hover {
-    color: #cc0000; /* Enlaces en rojo oscuro al pasar el ratón */
-}
-
-ul, ol {
-    margin: 20px 0;
-    padding: 0 20px;
-}
-
-li {
-    margin-bottom: 10px;
-    font-family: 'Eras Light', sans-serif;
-    color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Estilo de los inputs, textareas y selects */
-input, textarea, select {
-    width: 100%; /* Ancho completo */
-    padding: 10px; /* Padding */
-    margin: 10px 0; /* Margen superior e inferior */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 5px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
-    font-family: 'Eras Light', sans-serif; /* Fuente */
-    background-color: #fff; /* Fondo blanco para inputs */
-    color: #333; /* Texto en gris oscuro */
-}
-
-/* Estilo de las etiquetas */
-label {
-    font-family: 'Eras Light', sans-serif; /* Fuente */
-    color: #fff; /* Texto en blanco */
-    margin-bottom: 5px; /* Margen inferior */
-    display: block; /* Mostrar como bloque */
-}
-
-/* Estilo de las tablas */
-table {
-    width: 100%; /* Ancho completo */
-    border-collapse: collapse; /* Colapsar bordes */
-    margin: 20px 0; /* Margen superior e inferior */
-    font-family: 'Arial', sans-serif; /* Fuente */
-}
-
-/* Estilo de las celdas de las tablas */
-table th, table td {
-    border: 1px solid #ddd; /* Borde */
-    padding: 10px; /* Padding */
-    text-align: left; /* Texto alineado a la izquierda */
-}
-
-/* Estilo de los encabezados de las tablas */
-table th {
-    background-color: #444; /* Fondo gris oscuro */
-    color: #fff; /* Texto en blanco */
-}
-
-/* Estilo de las filas pares de las tablas */
-table tr:nth-child(even) {
-    background-color: #333; /* Fondo gris oscuro */
-}
-
-/* Estilo de las secciones */
-section {
-    padding: 60px 0; /* Padding superior e inferior */
-    background-color: #fff; /* Fondo negro */
-    position: relative; /* Posición relativa */
-    opacity: 0; /* Opacidad inicial */
-    animation: fadeIn 1s forwards; /* Animación de desvanecimiento */
-}
-
-/* Estilo de los títulos de las secciones */
-.section-title {
-    font-size: 2rem; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente */
-    color: #e60000; /* Color rojo */
-    text-align: center; /* Texto centrado */
-    margin-bottom: 40px; /* Margen inferior */
-    font-family: 'Eras Bold', sans-serif; /* Fuente */
-}
-
-/* Estilo de las secciones específicas */
-#centros, #instructores, #teoria, #download, #centros-kickboxing, #instructores-kickboxing {
-    padding: 20px; /* Padding */
-    background-color: #fff; /* Fondo blanco para secciones */
-    border-radius: 8px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Margen inferior */
-    margin-top: 40px; /* Margen superior */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    color: #333; /* Texto en gris oscuro */
-}
-
-/* Estilo de los separadores */
-hr.separator {
-    border: 0; /* Sin borde */
-    height: 1px; /* Altura */
-    background: #555; /* Línea separadora gris */
-    margin: 40px 0; /* Margen superior e inferior */
-}
-
-/* Animación de desvanecimiento */
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Opacidad inicial */
-        transform: translateY(20px); /* Desplazamiento inicial */
-    }
-    to {
-        opacity: 1; /* Opacidad final */
-        transform: translateY(0); /* Desplazamiento final */
-    }
-}
-
-/* #centros, #instructores, #teoria {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}*/
-
-/* Estilo del banner */
-.banner img {
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática */
-    max-height: 300px; /* Altura máxima */
-    object-fit: cover; /* Ajustar imagen */
-}
-
-a, button {
-    transition: all 0.3s ease;
-}
-
-.header h1, .navbar, .section-title, .btn {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para la sección de instructores */
-#instructores .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-#instructores .col-md-4 {
-    flex: 0 0 33.3333%; /* Ancho de cada columna */
-    max-width: 33.3333%; /* Ancho máximo de cada columna */
-    padding: 10px; /* Espacio entre las columnas */
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Colocar elementos en columna */
-    align-items: center; /* Centrar elementos horizontalmente */
-}
-
-#instructores .img-fluid {
-    width: 70%; /* Ancho de la imagen */
-    height: auto; /* Altura automática */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: transform 0.3s ease; /* Transición suave */
-}
-
-#instructores .img-fluid:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
-}
-
-.instructor-info {
-    text-align: center; /* Texto centrado */
-    margin-top: 10px; /* Margen superior */
-}
-
-.instructor-info h4 {
-    font-size: 1.2rem; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente */
-    color: #fff; /* Color del texto */
-    background-color: #e60000; /* Fondo rojo */
-    padding: 5px; /* Padding */
-    border-radius: 5px; /* Bordes redondeados */
-    margin-bottom: 5px; /* Margen inferior */
-}
-
-.instructor-info p {
-    font-size: 1rem; /* Tamaño de fuente */
-    color: #666; /* Color del texto */
-    margin: 0; /* Sin margen */
-}
-
-/* Estilo general del cuerpo de la página */
-body {
-    font-family: 'Poppins', sans-serif; /* Fuente más moderna */
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto en blanco */
+  }
+  
+  /* =======================
+     Estilos Globales
+  ========================== */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
     margin: 0;
     padding: 0;
-}
-
-/* Mejorar espacios y estructura visual */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Estilo del encabezado */
-.header {
+    text-align: center;
+  }
+  
+  /* =======================
+     Tipografía y Elementos de Texto
+  ========================== */
+  h1, h2, h3 {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: var(--color-rojo);
+    font-weight: 600;
+  }
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
+  
+  h4, h5, h6 {
+    font-family: 'Eras Bold', sans-serif;
+    color: #333;
+  }
+  
+  p {
+    font-family: 'Eras Demi', sans-serif;
+    color: var(--color-blanco);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Enlaces */
+  a {
+    font-family: 'Eras Light', sans-serif;
+    color: var(--color-rojo);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #cc0000;
+  }
+  
+  /* =======================
+     Encabezado (Header)
+  ========================== */
+  .header {
     background-image: url('../images/IMG_1596.PNG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
-    padding: 80px 0; /* Aumentar padding para más separación */
+    color: var(--color-blanco);
+    padding: 80px 0;
     text-align: center;
     position: relative;
-}
-
-.header h1 {
+  }
+  .header h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--color-blanco);
     margin: 0;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
     border-radius: 10px;
-}
-
-/* Mejorar navbar */
-.navbar {
-    background-color: #000;
+  }
+  
+  /* =======================
+     Navegación (Navbar)
+  ========================== */
+  .navbar {
+    background-color: var(--color-negro);
     padding: 10px 0;
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.navbar .nav-link {
-    color: #fff !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar .nav-link {
+    color: var(--color-blanco) !important;
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.navbar .nav-link:hover {
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .navbar .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Secciones con mejor espaciado */
-.section {
-    padding: 80px 20px;
+    transform: scale(1.05);
+  }
+  .navbar .dropdown-menu {
+    background-color: #333;
+    border: none;
+  }
+  .navbar .dropdown-item {
+    color: var(--color-blanco);
+  }
+  .navbar .dropdown-item:hover {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+  }
+  
+  /* =======================
+     Carousel (Academia)
+  ========================== */
+  #academiaCarousel img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  /* =======================
+     Acordeón (Centros de Enseñanza)
+  ========================== */
+  .accordion-body iframe {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  /* =======================
+     Secciones
+  ========================== */
+  .section {
+    padding: 80px 40px; /* 80px arriba y abajo, 40px a los lados */
     text-align: center;
-    background-color: #fff;
-    color: #333;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
     margin: 40px auto;
     max-width: 1100px;
-}
-
-/* Ajustar títulos */
-.section-title {
+  }
+  .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #e60000;
+    color: var(--color-rojo);
     margin-bottom: 30px;
     text-transform: uppercase;
-}
-
-/* Ajustar la galería */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.gallery img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Centra el título */
+    padding-top: 40px; /* Ajusta el valor según necesites */
+  }
+  
+  /* =======================
+     Formularios
+  ========================== */
+  form {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: var(--color-negro);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+  }
+  input, textarea, select {
     width: 100%;
-    max-width: 350px;
-    height: auto;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Estilo de los botones */
-button, .btn {
-    background-color: #e60000;
-    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Eras Light', sans-serif;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+  }
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--color-rojo);
+    box-shadow: 0 0 8px var(--color-rojo);
+  }
+  label {
+    font-family: 'Eras Light', sans-serif;
+    color: var(--color-blanco);
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* =======================
+     Tablas y Listas
+  ========================== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  table th {
+    background-color: #444;
+    color: var(--color-blanco);
+  }
+  table tr:nth-child(even) {
+    background-color: #333;
+  }
+  
+  ul, ol {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+  li {
+    margin-bottom: 10px;
+    font-family: 'Eras Light', sans-serif;
+    color: #333;
+  }
+  
+  /* =======================
+     Contenedor
+  ========================== */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+  
+  /* =======================
+     Botones
+  ========================== */
+  button, .btn {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
     border: none;
     padding: 12px 20px;
     font-size: 1rem;
@@ -561,17 +269,127 @@ button, .btn {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-button:hover, .btn:hover {
+  }
+  button:hover, .btn:hover {
     background-color: #cc0000;
-}
-
-/* Footer mejorado */
-footer {
+  }
+  .btn-secondary {
+    background-color: #333;
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-secondary:hover {
+    background-color: #555;
+  }
+  .btn-action {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-action:hover {
+    background-color: #cc0000;
+  }
+  
+  /* =======================
+     Pie de Página (Footer)
+  ========================== */
+  footer {
     background-color: #222;
-    color: #fff;
+    color: var(--color-blanco);
     padding: 30px 0;
     text-align: center;
     font-size: 1rem;
+    font-family: 'Eras Light', sans-serif;
+  }
+  footer a {
+    color: var(--color-rojo);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #cc0000;
+  }
+  
+  /* =======================
+     Botón "Volver Arriba"
+  ========================== */
+  #back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  #back-to-top:hover {
+    background-color: #cc0000;
+  }
+  
+  /* =======================
+     Enlaces de Contacto
+  ========================== */
+  .contact-links a {
+    color: var(--color-rojo);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  .contact-links a i {
+    margin-right: 8px;
+    font-size: 1.3rem;
+  }
+  .contact-links a:hover {
+    color: #cc0000;
+  }
+  
+  /* =======================
+   Estilos para la sección de Instructores
+========================== */
+
+/* Ajuste de columnas: se mantienen tres por fila en escritorio */
+.instructor-card {
+  background-color: var(--color-negro);
+  border: none;
 }
+.instructor-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;      /* Recorta la imagen para llenar el contenedor */
+    object-position: top;   /* Alinea la imagen de modo que la parte superior (la cara) sea visible */
+    display: block;         /* Permite que el margin auto funcione correctamente */
+    margin: 0 auto;         /* Centra horizontalmente la imagen */
+  }
+  
+  .instructor-card .card-title {
+    font-family: 'AF PEPSI', sans-serif;
+    color: var(--color-rojo);
+    margin-bottom: 5px;
+  }
+  
+  .instructor-card .card-text {
+    font-family: 'Eras Demi', sans-serif;
+    color: var(--color-blanco);
+  }

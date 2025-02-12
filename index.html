@@ -1,297 +1,371 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista -->
-    <title>Academia Hakkyo</title> <!-- Título de la página -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!-- Enlace a Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Enlace a la fuente Poppins -->
-    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace a la hoja de estilos personalizada -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- Enlace a Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlace a Font Awesome -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> <!-- Enlace a Google Maps API -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Hakkyo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <!-- Header -->
+  <header class="header"></header>
 
-    <!-- Header -->
-    <header class="header">
-        
-    </header>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">Academia Hakkyo</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#taekwondo" id="navbarDropdownTaekwondo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Taekwon-do ITF
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownTaekwondo">
+              <li><a class="dropdown-item" href="#centros">Centros de enseñanza</a></li>
+              <li><a class="dropdown-item" href="#instructores">Instructores</a></li>
+              <li><a class="dropdown-item" href="#teoria">Teoría del Taekwon-do</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#kickboxing" id="navbarDropdownKickboxing" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kick Boxing & Muay Thai
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownKickboxing">
+              <li><a class="dropdown-item" href="#centros-kickboxing">Centros de enseñanza</a></li>
+              <li><a class="dropdown-item" href="#instructores-kickboxing">Instructores</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> <!-- Icono del botón de navegación -->
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    
-                    <li class="nav-item"><a class="nav-link" href="#about">Academia Hakkyo</a></li> <!-- Enlace a la sección "Academia Hakkyo" -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#taekwondo" id="navbarDropdownTaekwondo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Taekwon-do ITF
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTaekwondo">
-                            <li><a class="dropdown-item" href="#centros">Centros de enseñanza</a></li>
-                            <li><a class="dropdown-item" href="#instructores">Instructores</a></li>
-                            <li><a class="dropdown-item" href="#teoria">Teoría del Taekwon-do</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#kickboxing" id="navbarDropdownKickboxing" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Kick Boxing & Muay Thai
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownKickboxing">
-                            <li><a class="dropdown-item" href="#centros-kickboxing">Centros de enseñanza</a></li>
-                            <li><a class="dropdown-item" href="#instructores-kickboxing">Instructores</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li> <!-- Enlace a la sección "Contacto" -->
-                </ul>
-            </div>
+  <!-- About Section -->
+  <section id="about" class="container section animate__animated animate__fadeInUp">
+    <h2 class="section-title">ACADEMIA HAKKYO</h2>
+    <p>Bienvenidos a la Academia Hakkyo. Nuestra misión es formar artistas marciales completos mediante la enseñanza de Taekwon-do ITF, Kick Boxing y Muay Thai. Promovemos disciplina, respeto y crecimiento personal.</p>
+  
+    <!-- Carrusel de imágenes -->
+    <div id="academiaCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#academiaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#academiaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#academiaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#academiaCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#academiaCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#academiaCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/image1.jpg" class="d-block w-100" alt="Foto de la academia">
         </div>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about" class="container section animate__animated animate__fadeInUp">
-        <h2 class="section-title">ACADEMIA HAKKYO</h2> <!-- Título de la sección -->
-        <p>Bienvenidos a la Academia Hakkyo. Nuestra misión es formar artistas marciales completos mediante la enseñanza de Taekwon-do ITF, Kick Boxing y Muay Thai. Promovemos disciplina, respeto y crecimiento personal.</p> <!-- Descripción de la sección -->
-        <div class="row gallery">
-            <div class="col-md-4"><img src="images/image1.jpg" alt="Foto de la academia" class="img-fluid"></div> <!-- Imagen de la galería -->
-            <div class="col-md-4"><img src="images/image2.jpg" alt="Foto de clase" class="img-fluid"></div> <!-- Imagen de la galería -->
-            <div class="col-md-4"><img src="images/image3.jpg" alt="Foto de entrenamiento" class="img-fluid"></div> <!-- Imagen de la galería -->
-            <div class="col-md-4"><img src="images/image4.jpg" alt="Foto de equipo" class="img-fluid"></div> <!-- Imagen de la galería -->
-            <div class="col-md-4"><img src="images/image5.jpg" alt="Foto de evento" class="img-fluid"></div> <!-- Imagen de la galería -->
-            <div class="col-md-4"><img src="images/image6.jpg" alt="Foto de competición" class="img-fluid"></div> <!-- Imagen de la galería -->
+        <div class="carousel-item">
+          <img src="images/image2.jpg" class="d-block w-100" alt="Foto de clase">
         </div>
-    </section>
+        <div class="carousel-item">
+          <img src="images/image3.jpg" class="d-block w-100" alt="Foto de entrenamiento">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image4.jpg" class="d-block w-100" alt="Foto de equipo">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image5.jpg" class="d-block w-100" alt="Foto de evento">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image6.jpg" class="d-block w-100" alt="Foto de competición">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#academiaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#academiaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
 
+  <hr class="separator">
+
+  <!-- Centros de enseñanza (Acordeón) -->
+  <section id="centros" class="mt-5">
+    <h3 class="section-title">Centros de enseñanza</h3>
+    <p>Información sobre los centros de enseñanza de Taekwon-do ITF.</p>
+    <div class="accordion" id="accordionCentros">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSantaFe">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSantaFe" aria-expanded="true" aria-controls="collapseSantaFe">
+            Sede Santa Fe
+          </button>
+        </h2>
+        <div id="collapseSantaFe" class="accordion-collapse collapse show" aria-labelledby="headingSantaFe" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4328607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20Santa%20Fe%204226!5e0!3m2!1ses!2sar!4v1684298564808!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Av. Sta. Fe 4226, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01147775308</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCallao">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCallao" aria-expanded="false" aria-controls="collapseCallao">
+            Sede Callao
+          </button>
+        </h2>
+        <div id="collapseCallao" class="accordion-collapse collapse" aria-labelledby="headingCallao" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4128607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20C%C3%B3rdoba%201819!5e0!3m2!1ses!2sar!4v1684298564809!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Av. Córdoba 1819, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01148136828</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingLacroze">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLacroze" aria-expanded="false" aria-controls="collapseLacroze">
+            Sede Lacroze
+          </button>
+        </h2>
+        <div id="collapseLacroze" class="accordion-collapse collapse" aria-labelledby="headingLacroze" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7719672746443!2d-58.456493324885805!3d-34.58463605648955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e5b7519ae5%3A0x2e47703b9c7ad6dc!2sGym%20Hakkyo%20-%20Sede%20Lacroze!5e0!3m2!1ses-419!2sar!4v1736518227521!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Federico Lacroze 3961, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01167609727</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSubzero">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubzero" aria-expanded="false" aria-controls="collapseSubzero">
+            Sede Subzero
+          </button>
+        </h2>
+        <div id="collapseSubzero" class="accordion-collapse collapse" aria-labelledby="headingSubzero" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.593271542879!2d-58.392056324884166!3d-34.614445058063794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadc02bb51c5%3A0xc818cc80f3da6521!2sGym%20Hakkyo%20-%20Sede%20Subzero!5e0!3m2!1ses-419!2sar!4v1736518320868!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Venezuela 1637, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01112345678</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructores -->
+  <section id="instructores" class="mt-5">
+    <h3 class="section-title">Instructores</h3>
+    <p>Información sobre los instructores de Taekwon-do ITF.</p>
+    <div class="row">
+      <!-- Instructor 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Figari.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Federico Figari" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Federico Figari</h5>
+            <p class="card-text">VI Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Moreno.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Giselle Moreno" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Giselle Moreno</h5>
+            <p class="card-text">IV Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Scarpino.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Gaston Scarpino" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Gaston Scarpino</h5>
+            <p class="card-text">IV Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Yucci.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Natalia Yucci" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Natalia Yucci</h5>
+            <p class="card-text">IV Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Marcelo.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Marcelo De La Parte" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Marcelo De La Parte</h5>
+            <p class="card-text">III Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Aguero.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Máximo Agüero" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Máximo Agüero</h5>
+            <p class="card-text">III Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Iglesia.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Maximiliano Iglesia" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Maximiliano Iglesia</h5>
+            <p class="card-text">III Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Grancha.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Gaston Scarpino" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Gaston Scarpino</h5>
+            <p class="card-text">III Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 9 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Quiroga.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Claudio Quiroga" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Claudio Quiroga</h5>
+            <p class="card-text">II Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 10 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Corengia.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Fernando Corengia" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Fernando Corengia</h5>
+            <p class="card-text">III Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 11 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Borba.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Facundo Borba" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Facundo Borba</h5>
+            <p class="card-text">I Dan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor 12 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="images/Instructores/Chaparro.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Leonardo Chaparro" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Leonardo Chaparro</h5>
+            <p class="card-text">I Dan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <!-- Teoría del Taekwon-do -->
+  <section id="teoria" class="mt-5">
+    <h3 class="section-title">Teoria del Taekwon-do</h3>
+    <section id="download" class="text-center my-5">
+      <button class="btn btn-download">Descargar PDF Teoria del Taekwon-do</button>
+    </section>
+  </section>
+
+  <hr class="separator">
+
+  <!-- Kick Boxing & Muay Thai -->
+  <section id="kickboxing" class="container section">
+    <h2 class="section-title">Kick Boxing & Muay Thai</h2>
+    <p>El Kick Boxing y Muay Thai son deportes de combate intensos que mejoran la condición física y la autodefensa. ¡Únete a nuestras clases y transforma tu cuerpo y mente!</p>
+    <section id="centros-kickboxing" class="mt-5">
+      <h3 class="section-title">Centros de enseñanza</h3>
+      <p>Información sobre los centros de enseñanza de Kick Boxing & Muay Thai.</p>
+    </section>
     <hr class="separator">
-
-    <!-- Taekwondo Section -->
-    <section id="taekwondo" class="container section">
-        <h2 class="section-title">Taekwon-do ITF</h2> <!-- Título de la sección -->
-        <p>El Taekwon-do ITF es una disciplina marcial que combina técnica, filosofía y competencia. Nuestros instructores son altamente capacitados para enseñarte cada aspecto de este arte.</p> <!-- Descripción de la sección -->
-        
-        <!-- Centros de enseñanza -->
-        <section id="centros" class="mt-5">
-            <h3 class="section-title">Centros de enseñanza</h3> <!-- Título de la subsección -->
-            <p>Información sobre los centros de enseñanza de Taekwon-do ITF.</p> <!-- Descripción de la subsección -->
-            <div class="row">
-                <div class="col-md-6" style="padding-top: 30px">
-                    <h3>Sede Santa Fe</h3>
-                    <p>Dirección: Av. Sta. Fe 4226, Cdad. Autónoma de Buenos Aires</p>
-                    <p>Teléfono: 01147775308</p>
-                    <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4328607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20Santa%20Fe%204226!5e0!3m2!1ses!2sar!4v1684298564808!5m2!1ses!2sar" 
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-6" style="padding-top: 30px">
-                    <h3>Sede Callao</h3>
-                    <p>Dirección: Av. Córdoba 1819, Cdad. Autónoma de Buenos Aires</p>
-                    <p>Teléfono: 01148136828</p>
-                    <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4128607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20Córdoba%201819!5e0!3m2!1ses!2sar!4v1684298564809!5m2!1ses!2sar" 
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-6" style="padding-top: 30px">
-                    <h3>Sede Lacroze</h3>
-                    <p>Dirección: Federico Lacroze 3961, Cdad. Autónoma de Buenos Aires</p>
-                    <p>Teléfono: 01167609727</p>
-                    <iframe 
-                    width="100%" 
-                    height="300" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7719672746443!2d-58.456493324885805!3d-34.58463605648955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e5b7519ae5%3A0x2e47703b9c7ad6dc!2sGym%20Hakkyo%20-%20Sede%20Lacroze!5e0!3m2!1ses-419!2sar!4v1736518227521!5m2!1ses-419!2sar"></iframe>
-                </div>
-                <div class="col-md-6" style="padding-top: 30px">
-                    <h3>Sede Subzero</h3>
-                    <p>Dirección: Venezuela 1637, Cdad. Autónoma de Buenos Aires</p>
-                    <p>Teléfono: 01112345678</p>
-                    <iframe 
-                    width="100%" 
-                    height="300" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade" 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.593271542879!2d-58.392056324884166!3d-34.614445058063794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadc02bb51c5%3A0xc818cc80f3da6521!2sGym%20Hakkyo%20-%20Sede%20Subzero!5e0!3m2!1ses-419!2sar!4v1736518320868!5m2!1ses-419!2sar"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- Instructores -->
-        <section id="instructores" class="mt-5">
-            <h3 class="section-title">Instructores</h3> <!-- Título de la subsección -->
-            <p>Información sobre los instructores de Taekwon-do ITF.</p> <!-- Descripción de la subsección -->
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="images/Instructores/Figari.png" alt="Instructor 1" class="img-fluid">
-                    <div class="instructor-info">
-                    <h4>Federico Figari</h4>
-                    <p>VI Dan</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Moreno.png" alt="Instructor 2" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Giselle Moreno</h4>
-                        <p>IV Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Scarpino.png" alt="Instructor 3" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Gaston Scarpino</h4>
-                        <p>IV Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Yucci.png" alt="Instructor 4" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Natalia Yucci</h4>
-                        <p>IV Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Marcelo.png" alt="Instructor 5" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Marcelo De La Parte</h4>
-                        <p>III Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Aguero.png" alt="Instructor 6" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Máximo Agüero</h4>
-                        <p>III Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Iglesia.png" alt="Instructor 7" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Maximiliano Iglesia</h4>
-                        <p>III Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Grancha.png" alt="Instructor 8" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Gaston Scarpino</h4>
-                        <p>III Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Quiroga.png" alt="Instructor 9" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Claudio Quiroga</h4>
-                        <p>II Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Corengia.png" alt="Instructor 10" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Fernando Corengia</h4>
-                        <p>III Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Borba.png" alt="Instructor 11" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Facundo Borba</h4>
-                        <p>I Dan</p>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Instructores/Chaparro.png" alt="Instructor 12" class="img-fluid">
-                    <div class="instructor-info">
-                        <h4>Leonardo Chaparro</h4>
-                        <p>I Dan</p>
-                        </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="separator">
-
-        <!-- Teoría del Taekwon-do -->
-        <section id="teoria" class="mt-5">
-            <h3 class="section-title">Teoría del Taekwon-do</h3> <!-- Título de la subsección -->
-            <!-- Download Section -->
-            <section id="download" class="text-center my-5">
-                <button class="btn btn-download">Descargar PDF Teoria del Taekwon-do</button> <!-- Botón de descarga -->
-            </section>
-        </section>
+    <section id="instructores-kickboxing" class="mt-5">
+      <h3 class="section-title">Instructores</h3>
+      <p>Información sobre los instructores de Kick Boxing & Muay Thai.</p>
     </section>
+  </section>
 
-    <hr class="separator">
+  <hr class="separator">
 
-    <!-- Kick Boxing Section -->
-    <section id="kickboxing" class="container section">
-        <h2 class="section-title">Kick Boxing & Muay Thai</h2> <!-- Título de la sección -->
-        <p>El Kick Boxing y Muay Thai son deportes de combate intensos que mejoran la condición física y la autodefensa. ¡Únete a nuestras clases y transforma tu cuerpo y mente!</p> <!-- Descripción de la sección -->
+  <!-- Contacto -->
+  <section id="contact" class="container section">
+    <h3 class="section-title">Redes Sociales</h3>
+    <div class="contact-links">
+      <a href="https://instagram.com/federicofigari" target="_blank">
+        <i class="fab fa-instagram"></i> @federicofigari
+      </a>
+      <a href="https://instagram.com/hakkyomartialarts" target="_blank">
+        <i class="fab fa-instagram"></i> @hakkyomartialarts
+      </a>
+      <a href="https://instagram.com/gymhakkyo" target="_blank">
+        <i class="fab fa-instagram"></i> @gymhakkyo
+      </a>
+    </div>
+    <h2 class="section-title" style="padding-top: 30px">Contacto</h2>
+    <p>Para más información, contáctanos mediante el formulario o visita nuestras redes sociales.</p>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
 
-        <!-- Centros de enseñanza -->
-        <section id="centros-kickboxing" class="mt-5">
-            <h3 class="section-title">Centros de enseñanza</h3> <!-- Título de la subsección -->
-            <p>Información sobre los centros de enseñanza de Kick Boxing & Muay Thai.</p> <!-- Descripción de la subsección -->
-        </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Academia Hakkyo. Todos los derechos reservados.</p>
+    <a href="#about"><i class="fas fa-home"></i> Academia Hakkyo</a> | 
+    <a href="#taekwondo"><i class="fas fa-fist-raised"></i> Taekwon-do ITF</a> | 
+    <a href="#kickboxing"><i class="fas fa-boxing-glove"></i> Kick Boxing & Muay Thai</a> | 
+    <a href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
+  </footer>
 
-        <hr class="separator">
-
-        <!-- Instructores -->
-        <section id="instructores-kickboxing" class="mt-5">
-            <h3 class="section-title">Instructores</h3> <!-- Título de la subsección -->
-            <p>Información sobre los instructores de Kick Boxing & Muay Thai.</p> <!-- Descripción de la subsección -->
-        </section>
-    </section>
-
-    <hr class="separator">
-
-    <!-- Contact Section -->
-    <section id="contact" class="container section">
-        <h2 class="section-title">Contacto</h2> <!-- Título de la sección -->
-        <p>Para más información, contáctanos mediante el formulario o visita nuestras redes sociales.</p> <!-- Descripción de la sección -->
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label> <!-- Etiqueta para el campo de nombre -->
-                <input type="text" class="form-control" id="name" required> <!-- Campo de entrada para el nombre -->
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label> <!-- Etiqueta para el campo de email -->
-                <input type="email" class="form-control" id="email" required> <!-- Campo de entrada para el email -->
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label> <!-- Etiqueta para el campo de mensaje -->
-                <textarea class="form-control" id="message" rows="4" required></textarea> <!-- Área de texto para el mensaje -->
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button> <!-- Botón de envío del formulario -->
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 Academia Hakkyo. Todos los derechos reservados.</p> <!-- Texto de derechos reservados -->
-        <a href="#about"><i class="fas fa-home"></i> Academia Hakkyo</a> | 
-        <a href="#taekwondo"><i class="fas fa-fist-raised"></i> Taekwon-do ITF</a> | 
-        <a href="#kickboxing"><i class="fas fa-boxing-glove"></i> Kick Boxing & Muay Thai</a> | 
-        <a href="#contact"><i class="fas fa-envelope"></i> Contacto</a> <!-- Enlaces de navegación en el pie de página -->
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Enlace al script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <button id="back-to-top" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+  <script>
+    var backToTopBtn = document.getElementById("back-to-top");
+    window.onscroll = function() {
+      backToTopBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+    };
+    backToTopBtn.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
