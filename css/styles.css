@@ -148,6 +148,12 @@
     max-height: 500px;
     object-fit: cover;
   }
+  #academiaCarousel .carousel-item img {
+    width: 100%;       /* Ocupa el 100% del ancho del contenedor */
+    height: 500px;     /* Establece una altura fija (ajusta este valor según tus necesidades) */
+    object-fit: contain; /* Hace que la imagen se recorte para llenar el contenedor sin distorsionarse */
+    background-color: #000; /* Opcional: un fondo para que se integren mejor los espacios */
+  }
   
   /* =======================
      Acordeón (Centros de Enseñanza)
