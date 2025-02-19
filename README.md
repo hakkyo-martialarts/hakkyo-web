@@ -22,6 +22,7 @@ The project structure is as follows:
 ├── css
 │   └── styles.css
 ├── fonts
+├── js
 ├── resources
 ├── index.html
 ├── README.md
