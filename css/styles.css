@@ -16,15 +16,15 @@
   }
   @font-face {
     font-family: 'Eras Bold';
-    src: url('../fonts/ErasBold.ttf') format('opentype');
+    src: url('../fonts/ErasBold.otf') format('opentype');
   }
   @font-face {
     font-family: 'Eras Demi';
-    src: url('../fonts/ErasDemi.ttf') format('opentype');
+    src: url('../fonts/ErasDemi.otf') format('opentype');
   }
   @font-face {
     font-family: 'Eras Light';
-    src: url('../fonts/ErasLight.ttf') format('opentype');
+    src: url('../fonts/ErasLight.otf') format('opentype');
   }
   
   /* =======================
