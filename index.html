@@ -35,7 +35,8 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header"></header>
+  <header class="header">
+  </header>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,6 +53,7 @@
               Taekwon-do ITF
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownTaekwondo">
+              <li><a class="dropdown-item" href="#what">¿Qué es?</a></li>
               <li><a class="dropdown-item" href="#centros">Centros de enseñanza</a></li>
               <li><a class="dropdown-item" href="#instructores">Instructores</a></li>
               <li><a class="dropdown-item" href="#teoria">Teoría del Taekwon-do</a></li>
@@ -62,6 +64,7 @@
               Kick Boxing & Muay Thai
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownKickboxing">
+              <li><a class="dropdown-item" href="#what">¿Qué es?</a></li>
               <li><a class="dropdown-item" href="#centros-kickboxing">Centros de enseñanza</a></li>
               <li><a class="dropdown-item" href="#instructores-kickboxing">Instructores</a></li>
             </ul>
@@ -76,7 +79,8 @@
   <section id="about" class="container section animate__animated animate__fadeInUp">
     <h2 class="section-title">ACADEMIA HAKKYO</h2>
     <p>Academia Hakkyo, fundada y dirigida por Federico Figari, ofrece clases de Taekwon-Do ITF, Kick Boxing y Muay Thai. Las clases se imparten en diferentes horarios a lo largo de la semana, brindando opciones para distintos niveles y edades. </p>
-  
+  </section>
+
     <!-- Carrusel de imágenes -->
     <div id="academiaCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -119,6 +123,13 @@
   </section>
 
   <hr class="separator">
+
+    <!-- What Section -->
+    <section id="what" class="container section">
+      <h2 class="section-title">¿Qué es Taekwon-do ITF?</h2>
+      <p>Taekwon-do ITF es un arte marcial de origen Coreano, creado el 11 de abril de 1955 por el Gral. Choi Hong Hi.</p>
+      <p>A través de sus principios y de la práctica, se busca el desarrollo integral del individuo, tanto en el aspecto físico como en el mental.</p>
+    </section>
 
   <!-- Centros de enseñanza (Acordeón) -->
   <section id="centros" class="mt-5">
@@ -174,6 +185,19 @@
           <div class="accordion-body">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.593271542879!2d-58.392056324884166!3d-34.614445058063794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadc02bb51c5%3A0xc818cc80f3da6521!2sGym%20Hakkyo%20-%20Sede%20Subzero!5e0!3m2!1ses-419!2sar!4v1736518320868!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>Dirección: Venezuela 1637, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01112345678</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCiudad">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCiudad" aria-expanded="false" aria-controls="collapseCiudad">
+            Sede Ciudad
+          </button>
+        </h2>
+        <div id="collapseCiudad" class="accordion-collapse collapse" aria-labelledby="headingCiudad" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3871481534616!2d-58.46118112488816!3d-34.54375185433268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4214094eb49%3A0xbd57661b573c59d2!2sTeam%20Hakkyo!5e0!3m2!1ses-419!2sar!4v1740010922146!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Miguel B. Sánchez 1049, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01147049557</p>
           </div>
         </div>
       </div>
@@ -323,17 +347,94 @@
   <!-- Kick Boxing & Muay Thai -->
   <section id="kickboxing" class="container section">
     <h2 class="section-title">Kick Boxing & Muay Thai</h2>
-    <p>El Kick Boxing y Muay Thai son deportes de combate intensos que mejoran la condición física y la autodefensa. ¡Únete a nuestras clases y transforma tu cuerpo y mente!</p>
-    <section id="centros-kickboxing" class="mt-5">
-      <h3 class="section-title">Centros de enseñanza</h3>
-      <p>Información sobre los centros de enseñanza de Kick Boxing & Muay Thai.</p>
+  </section>
+
+    <!-- What Section -->
+    <section id="what" class="container section">
+      <h2 class="section-title">¿Qué es?</h2>
+      <p>Kick Boxing es un arte marcial japones y Muay Thai es de origen tailandes.</p>
+      <p>Combinan golpes, patadas, codos y rodillas para entrenamientos intensos y completos.</p>
     </section>
+
+    <!-- Centros de enseñanza (Acordeón) -->
+  <section id="centros" class="mt-5">
+    <h3 class="section-title">Centros de enseñanza</h3>
+    <p>Gym Hakkyo ofrece clases de Kick Boxing & Muay Thai en sus sedes. Además, los intructores dictan clases en otros espacios como gimnasios de otras cadenas, centros privados, colegios y clases personalizadas.</p>
+    <div class="accordion" id="accordionCentros">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSantaFe">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSantaFe" aria-expanded="true" aria-controls="collapseSantaFe">
+            Sede Santa Fe
+          </button>
+        </h2>
+        <div id="collapseSantaFe" class="accordion-collapse collapse show" aria-labelledby="headingSantaFe" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4328607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20Santa%20Fe%204226!5e0!3m2!1ses!2sar!4v1684298564808!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Av. Sta. Fe 4226, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01147775308</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCallao">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCallao" aria-expanded="false" aria-controls="collapseCallao">
+            Sede Callao
+          </button>
+        </h2>
+        <div id="collapseCallao" class="accordion-collapse collapse" aria-labelledby="headingCallao" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4128607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20C%C3%B3rdoba%201819!5e0!3m2!1ses!2sar!4v1684298564809!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Av. Córdoba 1819, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01148136828</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingLacroze">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLacroze" aria-expanded="false" aria-controls="collapseLacroze">
+            Sede Lacroze
+          </button>
+        </h2>
+        <div id="collapseLacroze" class="accordion-collapse collapse" aria-labelledby="headingLacroze" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7719672746443!2d-58.456493324885805!3d-34.58463605648955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e5b7519ae5%3A0x2e47703b9c7ad6dc!2sGym%20Hakkyo%20-%20Sede%20Lacroze!5e0!3m2!1ses-419!2sar!4v1736518227521!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Federico Lacroze 3961, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01167609727</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSubzero">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubzero" aria-expanded="false" aria-controls="collapseSubzero">
+            Sede Subzero
+          </button>
+        </h2>
+        <div id="collapseSubzero" class="accordion-collapse collapse" aria-labelledby="headingSubzero" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.593271542879!2d-58.392056324884166!3d-34.614445058063794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadc02bb51c5%3A0xc818cc80f3da6521!2sGym%20Hakkyo%20-%20Sede%20Subzero!5e0!3m2!1ses-419!2sar!4v1736518320868!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Venezuela 1637, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01112345678</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCiudad">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCiudad" aria-expanded="false" aria-controls="collapseCiudad">
+            Sede Ciudad
+          </button>
+        </h2>
+        <div id="collapseCiudad" class="accordion-collapse collapse" aria-labelledby="headingCiudad" data-bs-parent="#accordionCentros">
+          <div class="accordion-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3871481534616!2d-58.46118112488816!3d-34.54375185433268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4214094eb49%3A0xbd57661b573c59d2!2sTeam%20Hakkyo!5e0!3m2!1ses-419!2sar!4v1740010922146!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Dirección: Miguel B. Sánchez 1049, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01147049557</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <hr class="separator">
     <section id="instructores-kickboxing" class="mt-5">
       <h3 class="section-title">Instructores</h3>
       <p>Información sobre los instructores de Kick Boxing & Muay Thai.</p>
     </section>
-  </section>
+  
 
   <hr class="separator">
 
