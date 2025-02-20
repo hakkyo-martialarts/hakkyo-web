@@ -1,11 +1,12 @@
 # Hakkyo Martial Arts Web
 
-This repository contains the source code for the Hakkyo Martial Arts website, which offers information about Taekwon-Do ITF, Kick Boxing, and Muay Thai classes in Argentina. The website is live at [https://www.teamhakkyo.com.ar](https://www.teamhakkyo.com.ar) and is deployed using GitHub Pages.
+This repository contains the source code for the Hakkyo Martial Arts website, which offers information about Taekwon-Do ITF, Kick Boxing, and Muay Thai classes in Argentina. The website is live at [https://www.academiahakkyo.com.ar](https://www.academiahakkyo.com.ar) and is deployed using GitHub Pages.
 
 ## Table of Contents
 
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
+- [Running a Local Server](#running-a-local-server)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
@@ -55,6 +56,31 @@ To set up the project locally, follow these steps:
 
 3. **Open the project**:
     Open `index.html` in your preferred web browser to view the website locally.
+
+## Running a Local Server
+
+To run a local server for testing, you can use a simple HTTP server. Here are a few options:
+
+1. **Using Python (if installed)**:
+
+    ```sh
+    # For Python 3.x
+    python -m http.server 5500
+
+    # For Python 2.x
+    python -m SimpleHTTPServer 5500
+    ```
+
+    Then, open your browser and navigate to `http://127.0.0.1:5500`.
+
+2. **Using Node.js and http-server (if installed)**:
+
+    ```sh
+    npm install -g http-server
+    http-server -p 5500
+    ```
+
+    Then, open your browser and navigate to `http://127.0.0.1:5500`.
 
 ## Deployment
 
