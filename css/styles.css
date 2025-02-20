@@ -16,15 +16,15 @@
   }
   @font-face {
     font-family: 'Eras Bold';
-    src: url('../fonts/ErasBold.ttf') format('truetype');
+    src: url('../fonts/ErasBold.otf') format('opentype');
   }
   @font-face {
     font-family: 'Eras Demi';
-    src: url('../fonts/ErasDemi.ttf') format('truetype');
+    src: url('../fonts/ErasDemi.otf') format('opentype');
   }
   @font-face {
     font-family: 'Eras Light';
-    src: url('../fonts/ErasLight.ttf') format('truetype');
+    src: url('../fonts/ErasLight.otf') format('opentype');
   }
   
   /* =======================
@@ -78,7 +78,7 @@
      Encabezado (Header)
   ========================== */
   .header {
-    background-image: url('../images/IMG_1596.PNG');
+    background-image: url('../assets/images/IMG_1596.PNG') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,6 +86,7 @@
     padding: 80px 0;
     text-align: center;
     position: relative;
+    min-height: 100px; /* Fuerza una altura mínima */
   }
   .header h1 {
     font-size: 3rem;
@@ -93,7 +94,7 @@
     color: var(--color-blanco);
     margin: 0;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     border-radius: 10px;
   }
@@ -149,7 +150,7 @@
     object-fit: cover;
   }
   #academiaCarousel .carousel-item img {
-    width: 100%;       /* Ocupa el 100% del ancho del contenedor */
+    width: 95%;       /* Ocupa el 95% del ancho del contenedor */
     height: 500px;     /* Establece una altura fija (ajusta este valor según tus necesidades) */
     object-fit: contain; /* Hace que la imagen se recorte para llenar el contenedor sin distorsionarse */
     background-color: #000; /* Opcional: un fondo para que se integren mejor los espacios */
@@ -167,14 +168,14 @@
      Secciones
   ========================== */
   .section {
-    padding: 80px 40px; /* 80px arriba y abajo, 40px a los lados */
+    width: 75%;
+    margin: 40px auto; /* Esto centra la sección con márgenes laterales de 12.5% */
+    padding: 80px 20px;
     text-align: center;
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
+    background-color: #000000;
+    color: #333;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
-    margin: 40px auto;
-    max-width: 1100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   .section-title {
     font-size: 2.5rem;
@@ -256,9 +257,9 @@
      Contenedor
   ========================== */
   .container {
-    max-width: 1200px;
+    width: 75%;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 20px;
   }
   
   /* =======================
@@ -399,3 +400,20 @@
     font-family: 'Eras Demi', sans-serif;
     color: var(--color-blanco);
   }
+
+#what,
+#about,
+#centros, 
+#instructores, 
+#teoria, 
+#download, 
+#centros-kickboxing, 
+#instructores-kickboxing {
+    width: 75%;
+    padding: 20px;
+    background-color: #000; /* Fondo negro */
+    border-radius: 8px;
+    margin: 40px auto 20px auto; /* Centrado con margen superior e inferior */
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Puedes ajustar la sombra si lo deseas */
+    color: #fff; /* Texto blanco para buen contraste */
+}
