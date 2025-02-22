@@ -143,7 +143,9 @@
           <div class="card-body">
             <h5 class="card-title">Federico Figari</h5>
             <p class="card-text">VI Dan</p>
-            <a href="#accordionCentros" class="btn btn-primary" onclick="openAccordion('collapseFigari')">Ver Centros</a>
+            <a href="#figari-centers" class="btn btn-primary">
+              <i class="fas fa-map-marker-alt"></i> Santa Fe, Barrio 31
+            </a>
           </div>
         </div>
       </div>
@@ -269,97 +271,67 @@
     <p>A continuación se muestran los centros en los que cada instructor dicta clases:</p>
     <div class="accordion" id="accordionCentros">
       <!-- Instructor: Federico Figari -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFigari">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFigari" aria-expanded="false" aria-controls="collapseFigari">
-            Federico Figari
-          </button>
-        </h2>
-        <div id="collapseFigari" class="accordion-collapse collapse" aria-labelledby="headingFigari" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <ul>
-              <li>
-                <strong>Gym Hakkyo sede Santa Fe</strong><br>
-                Dirección: Av. Santa Fe 4226, Cdad. Autónoma de Buenos Aires<br>
-                <em>Infantiles:</em> Lunes, Miércoles y Viernes 16h y 17h – Martes y Jueves 17h y 18h<br>
-                <em>Juveniles y Adultos:</em> Lunes, Miércoles y Viernes 21h – Martes y Jueves 20h<br>
-              </li>
-              <li>
-                <strong>Centro Comunitario Barrio 31 </strong><br>
-                Dirección: Vicuña 885 Barrio 31 <br>
-                <em>Infantiles:</em> Sábados 9hs <br>
-              </li>
-              <!-- Puedes agregar más centros si corresponde -->
-            </ul>
-          </div>
-        </div>
-      </div>
+      <!-- Bloque de centros para Federico Figari -->
+<div class="instructor-centers" id="figari-centers">
+  <h4 class="instructor-header">Federico Figari</h4>
+  <div class="centers-list">
+    <div class="center-item">
+      <h5>Gym Hakkyo sede Santa Fe</h5>
+      <p><strong>Dirección:</strong> Av. Santa Fe 4226, Cdad. Autónoma de Buenos Aires</p>
+      <p><strong>Infantiles:</strong> Lunes, Miércoles y Viernes 16h y 17h – Martes y Jueves 17h y 18h</p>
+      <p><strong>Juveniles y Adultos:</strong> Lunes, Miércoles y Viernes 21h – Martes y Jueves 20h</p>
+    </div>
+    <div class="center-item">
+      <h5>Centro Comunitario Barrio 31</h5>
+      <p><strong>Dirección:</strong> Vicuña 885, Barrio 31</p>
+      <p><strong>Infantiles:</strong> Sábados 9hs</p>
+    </div>
+    <!-- Agrega más center-item según corresponda -->
+  </div>
+</div>
+
   
       <!-- Instructor: Giselle Moreno -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingMoreno">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoreno" aria-expanded="false" aria-controls="collapseMoreno">
-            Giselle Moreno
-          </button>
-        </h2>
-        <div id="collapseMoreno" class="accordion-collapse collapse" aria-labelledby="headingMoreno" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <ul>  
-              <li>
-              <strong>Gym Hakkyo sede Santa Fe</strong><br>
-                  Dirección: Av. Santa Fe 4226, Cdad. Autónoma de Buenos Aires
-              <em>Juveniles y Adultos:</em> Miércoles 21h <br>
-              <em>Infantiles, Juveniles y Adultos:</em> Sabados <br>
-              <!-- Agrega más centros si corresponde -->
-            </li>
-            </ul>
+      <div class="instructor-centers" id="moreno-centers">
+        <h4 class="instructor-header">Giselle Moreno</h4>
+        <div class="centers-list">
+          <div class="center-item">
+            <h5>Gym Hakkyo sede Santa Fe</h5>
+            <p><strong>Dirección:</strong> Av. Santa Fe 4226, Cdad. Autónoma de Buenos Aires</p>
+            <p><strong>Juveniles y Adultos:</strong> Miércoles 21h</p>
+            <p><strong>Infantiles, Juveniles y Adultos:</strong> Sábados</p>
           </div>
         </div>
       </div>
 
       <!-- Instructor: Gaston Scarpino -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingScarpino">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScarpino" aria-expanded="false" aria-controls="collapseFigari">
-            Gaston Scarpino
-          </button>
-        </h2>
-        <div id="collapseScarpino" class="accordion-collapse collapse " aria-labelledby="headingScarpino" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <ul>
-              <li>
-                <strong>Club Hungria</strong><br>
-                Dirección: Pje. Hungria 4250, Olivos<br>
-                <em>Infantiles:</em> Miércoles y Viernes 17h – Sábados 11h<br>
-                <em>Adultos:</em> Miércoles y Viernes 18h – Sábados 12h<br>
-              </li>
-              <!-- Puedes agregar más centros si corresponde -->
-            </ul>
+      <div class="instructor-centers" id="scarpino-centers">
+        <h4 class="instructor-header">Gaston Scarpino</h4>
+        <div class="centers-list">
+          <div class="center-item">
+            <h5>Club Hungria</h5>
+            <p><strong>Dirección:</strong> Pje. Hungria 4250, Olivos</p>
+            <p><strong>Infantiles:</strong> Miércoles y Viernes 17h – Sábados 11h</p>
+            <p><strong>Adultos:</strong> Miércoles y Viernes 18h – Sábados 12h</p>
           </div>
         </div>
       </div>
 
       <!-- Instructor: Natalia Yucci -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingYucci">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYucci" aria-expanded="false" aria-controls="collapseYucci">
-            Natalia Yucci
-          </button>
-        </h2>
-        <div id="collapseYucci" class="accordion-collapse collapse " aria-labelledby="headingYucci" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <ul>
-              <li>
-                <strong>Sociedad de Fomento Falucho</strong><br>
-                Dirección: Robert Lennedy 3175<br>
-                <em>Infantiles:</em> Martes y jueves 18h<br>
-                <em>Adultos:</em> Martes y jueves 19h<br>
-              </li>
-              <!-- Puedes agregar más centros si corresponde -->
-            </ul>
-          </div>
-        </div>
-      </div>
+<!-- Bloque de centros para Natalia Yucci -->
+<div class="instructor-centers" id="yucci-centers">
+  <h4 class="instructor-header">Natalia Yucci</h4>
+  <div class="centers-list">
+    <div class="center-item">
+      <h5>Sociedad de Fomento Falucho</h5>
+      <p><strong>Dirección:</strong> Robert Lennedy 3175</p>
+      <p><strong>Infantiles:</strong> Martes y jueves 18h</p>
+      <p><strong>Adultos:</strong> Martes y jueves 19h</p>
+    </div>
+    <!-- Agrega más center-item aquí si Natalia dicta clases en otros centros -->
+  </div>
+</div>
+
 
       <!-- Instructor: Marcelo de la Parte -->
       <div class="accordion-item">

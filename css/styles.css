@@ -418,25 +418,56 @@
     color: #fff; /* Texto blanco para buen contraste */
 }
 
-.accordion-button {
-  background-color: #1a1a1a !important;  /* Un gris muy oscuro */
-  color: #fff !important;
-  border: none !important;
-  font-weight: 600 !important;
-}
-.accordion-button.collapsed {
-  background-color: #141414 !important;  /* Un tono un poco más oscuro cuando está cerrado */
-}
-.accordion-body {
-  background-color: #141414 !important;  /* Misma tonalidad que el botón cerrado */
-  color: #fff !important;
-  border-top: 1px solid #333 !important; /* Un borde sutil para separar */
-}
-
-.accordion-button:hover,
-.accordion-button:focus {
+/* Personaliza el encabezado del acordeón para que se vea en rojo */
+.accordion-header .accordion-button {
   background-color: var(--color-rojo) !important;
   color: var(--color-blanco) !important;
-  /* Puedes agregar una transición si deseas un efecto suave */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+}
+
+/* Opcional: al pasar el mouse, mantener el mismo estilo o ajustar según prefieras */
+.accordion-header .accordion-button:hover,
+.accordion-header .accordion-button:focus {
+  background-color: #cc0000 !important;
+  color: var(--color-blanco) !important;
+}
+
+/* El cuerpo del acordeón puede quedarse con el estilo actual o ajustarlo */
+.accordion-body {
+  background-color: #141414 !important; /* o el color que prefieras para el fondo del contenido */
+  color: var(--color-blanco) !important;
+  border-top: 1px solid #333 !important;
+}
+
+.instructor-centers {
+  width: 75%;
+  margin: 40px auto;
+}
+
+.instructor-header {
+  background-color: var(--color-rojo);
+  color: var(--color-blanco);
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.75rem;
+  border-radius: 5px;
+}
+
+.centers-list {
+  background-color: #141414;
+  color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.center-item {
+  margin-bottom: 20px;
+}
+
+.center-item h5 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-rojo);
 }
