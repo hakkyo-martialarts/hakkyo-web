@@ -250,7 +250,7 @@
   li {
     margin-bottom: 10px;
     font-family: 'Eras Light', sans-serif;
-    color: #333;
+    color: #ffffff;
   }
   
   /* =======================
@@ -416,4 +416,27 @@
     margin: 40px auto 20px auto; /* Centrado con margen superior e inferior */
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Puedes ajustar la sombra si lo deseas */
     color: #fff; /* Texto blanco para buen contraste */
+}
+
+.accordion-button {
+  background-color: #1a1a1a !important;  /* Un gris muy oscuro */
+  color: #fff !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+.accordion-button.collapsed {
+  background-color: #141414 !important;  /* Un tono un poco más oscuro cuando está cerrado */
+}
+.accordion-body {
+  background-color: #141414 !important;  /* Misma tonalidad que el botón cerrado */
+  color: #fff !important;
+  border-top: 1px solid #333 !important; /* Un borde sutil para separar */
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+  background-color: var(--color-rojo) !important;
+  color: var(--color-blanco) !important;
+  /* Puedes agregar una transición si deseas un efecto suave */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
