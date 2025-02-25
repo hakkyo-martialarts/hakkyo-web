@@ -488,3 +488,25 @@
   background-color: var(--color-rojo);
   color: var(--color-blanco);
 }
+
+.container {
+  width: 75%;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .section {
+    padding: 40px 10px;
+  }
+  .navbar .nav-link {
+    font-size: 0.9rem;
+    margin: 0 5px;
+  }
+  .header {
+    height: 250px;
+  }
+}
