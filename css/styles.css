@@ -79,16 +79,6 @@
   ========================== */
 /* Header */
 .header {
-  background-image: url('../assets/images/HeaderWeb.png'); /* Usa la imagen que prefieras */
-  background-size: contain;
-  background-position: center;
-  height: 100px;  /* Altura recomendada, puedes ajustar según necesidad */
-  text-align: center;
-  color: var(--color-blanco);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
 }
 
 .header h1 {
@@ -99,53 +89,51 @@
 }
 
 /* Navbar básica */
+/* Estilos para la navbar */
 .custom-navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid var(--color-rojo);
-  padding: 1px 0;
-  transition: background-color 0.3s ease, padding 0.3s ease;
+  background-color: var(--color-negro);
+  border-bottom: 2px solid var(--color-rojo);
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1050;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
 }
 
-/* Estilos para el contenedor y enlaces */
 .custom-navbar .navbar-brand {
-  color: var(--color-blanco);
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
 }
-.custom-navbar .navbar-brand:hover {
-  color: var(--color-rojo);
+
+.navbar-logo {
+  height: 40px; /* Ajusta este valor según lo que desees para el logo */
+  /* Opcional: margen a la derecha para separar del texto si agregas otro elemento */
+  margin-right: 10px;
 }
+
+.custom-navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .custom-navbar .nav-link {
   color: var(--color-blanco) !important;
   font-size: 0.95rem;
   text-transform: uppercase;
-  margin: 0 30px;
+  margin: 0 10px;
   transition: color 0.3s ease;
 }
+
 .custom-navbar .nav-link:hover {
   color: var(--color-rojo) !important;
 }
 
-.navbar .dropdown-menu .dropdown-item:hover {
-  background-color: var(--color-rojo) !important;
-  color: var(--color-blanco) !important;
-}
-
-/* Opcional: cuando se haga scroll, la navbar se vuelve más sólida */
-.navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 1px 50px;
-}
-
-/* Toggler para móviles */
-.custom-navbar .navbar-toggler {
-  border-color: var(--color-rojo);
-}
-.custom-navbar .navbar-toggler-icon {
-  filter: invert(1);
-}
 
   /* =======================
      Carousel (Academia)
