@@ -35,7 +35,7 @@
     background-color: var(--color-negro);
     color: var(--color-blanco);
     margin: 0;
-    padding: 0;
+    padding: 60px;
     text-align: center;
   }
   
@@ -77,71 +77,76 @@
   /* =======================
      Encabezado (Header)
   ========================== */
-  .header {
-    background-image: url('../assets/images/IMG_1596.PNG') !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--color-blanco);
-    padding: 80px 0;
-    text-align: center;
-    position: relative;
-    min-height: 100px; /* Fuerza una altura mínima */
-  }
-  .header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color-blanco);
-    margin: 0;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    display: inline-block;
-    border-radius: 10px;
-  }
-  
-  /* =======================
-     Navegación (Navbar)
-  ========================== */
-  .navbar {
-    background-color: var(--color-negro);
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  .navbar .navbar-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .navbar .nav-link {
-    color: var(--color-blanco) !important;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease, transform 0.3s ease;
-  }
-  .navbar .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-  }
-  .navbar .dropdown-menu {
-    background-color: #333;
-    border: none;
-  }
-  .navbar .dropdown-item {
-    color: var(--color-blanco);
-  }
-  .navbar .dropdown-item:hover {
-    background-color: var(--color-rojo);
-    color: var(--color-blanco);
-  }
-  
+/* Header */
+.header {
+  background-image: url('../assets/images/HeaderWeb.png'); /* Usa la imagen que prefieras */
+  background-size: contain;
+  background-position: center;
+  height: 100px;  /* Altura recomendada, puedes ajustar según necesidad */
+  text-align: center;
+  color: var(--color-blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Navbar básica */
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid var(--color-rojo);
+  padding: 1px 0;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  z-index: 1050;
+}
+
+/* Estilos para el contenedor y enlaces */
+.custom-navbar .navbar-brand {
+  color: var(--color-blanco);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.custom-navbar .navbar-brand:hover {
+  color: var(--color-rojo);
+}
+.custom-navbar .nav-link {
+  color: var(--color-blanco) !important;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  margin: 0 30px;
+  transition: color 0.3s ease;
+}
+.custom-navbar .nav-link:hover {
+  color: var(--color-rojo) !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: var(--color-rojo) !important;
+  color: var(--color-blanco) !important;
+}
+
+/* Opcional: cuando se haga scroll, la navbar se vuelve más sólida */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1px 50px;
+}
+
+/* Toggler para móviles */
+.custom-navbar .navbar-toggler {
+  border-color: var(--color-rojo);
+}
+.custom-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
   /* =======================
      Carousel (Academia)
   ========================== */
@@ -445,14 +450,24 @@
 }
 
 .instructor-header {
-  background-color: var(--color-rojo);
-  color: var(--color-blanco);
-  padding: 10px;
-  margin-bottom: 20px;
+  background-color: var(--color-negro);  /* Fondo negro */
+  border: 2px solid var(--color-rojo);     /* Borde rojo */
+  color: var(--color-blanco);              /* Texto en blanco */
+  padding: 15px;
+  border-radius: 20px;                     /* Bordes redondeados */
   text-align: center;
   font-size: 1.75rem;
-  border-radius: 5px;
+  font-family: 'AF PEPSI', sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.instructor-header:hover {
+  background-color: var(--color-rojo);
+  color: var(--color-blanco);
+}
+
 
 .centers-list {
   background-color: #141414;
