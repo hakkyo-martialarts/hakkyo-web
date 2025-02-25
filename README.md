@@ -1,6 +1,6 @@
 # Hakkyo Martial Arts Web
 
-This repository contains the source code for the Hakkyo Martial Arts website, which offers information about Taekwon-Do ITF, Kick Boxing, and Muay Thai classes in Argentina. The website is live at [https://www.academiahakkyo.com.ar](https://www.academiahakkyo.com.ar) and is deployed using GitHub Pages.
+This repository contains the source code for the Hakkyo Martial Arts website, which offers information about Taekwon-Do ITF, Kick Boxing, and Muay Thai classes in Argentina. The website is live at [https://www.teamhakkyo.com.ar](https://www.academiahakkyo.com.ar) and is deployed using GitHub Pages.
 
 ## Table of Contents
 
