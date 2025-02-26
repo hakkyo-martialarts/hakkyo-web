@@ -402,7 +402,7 @@
 #download, 
 #centros-kickboxing, 
 #instructores-kickboxing {
-    width: 75%;
+    width: 80%;
     padding: 20px;
     background-color: #000; /* Fondo negro */
     border-radius: 8px;
@@ -433,7 +433,7 @@
 }
 
 .instructor-centers {
-  width: 75%;
+  width: 80%;
   margin: 40px auto;
 }
 
@@ -490,7 +490,7 @@
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .container,
   .section {
     width: 100% !important;
@@ -510,5 +510,15 @@
     font-size: 1rem;
     margin: 0 5px;
     text-align: center;
+  }
+
+  .instructor-centers {
+    width: 100% !important;
+    margin: 20px auto !important;
+    padding: 0 5px; /* Pequeño padding lateral */
+  }
+  /* Ajustamos el recuadro gris para que tenga mayor padding */
+  .centers-list {
+    padding: 30px !important;
   }
 }
