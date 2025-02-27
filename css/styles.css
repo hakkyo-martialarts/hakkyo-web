@@ -346,9 +346,9 @@
     color: #cc0000;
   }
   
-  /* =======================
-     Botón "Volver Arriba"
-  ========================== */
+  /* =================================
+     Botón "Volver Arriba" y WhastApp
+  ==================================== */
   #back-to-top {
     position: fixed;
     bottom: 30px;
@@ -365,6 +365,23 @@
   }
   #back-to-top:hover {
     background-color: #cc0000;
+  }
+
+  #whatsapp-btn {
+    position: fixed;
+    bottom: 90px; /* Se ubica arriba del botón de "Volver arriba" */
+    right: 27px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  #whatsapp-btn:hover {
+    background-color: #128c7e;
   }
   
   /* =======================
@@ -544,3 +561,5 @@
     padding: 30px !important;
   }
 }
+
+
