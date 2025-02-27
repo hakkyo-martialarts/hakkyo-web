@@ -134,6 +134,28 @@
   color: var(--color-rojo) !important;
 }
 
+/* Menú desplegable: fondo negro por defecto */
+.navbar .dropdown-menu {
+  background-color: #000;
+  border: none;
+  color: #ffffff;
+}
+
+/* Ítems del menú: fondo rojo y texto blanco al hover */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #e60000;
+  color: #ffffff;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #fff !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #e60000;
+  color: #fff !important;
+}
+
 
   /* =======================
      Carousel (Academia)
