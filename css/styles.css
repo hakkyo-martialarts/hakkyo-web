@@ -77,6 +77,7 @@
   /* =======================
      Encabezado (Header)
   ========================== */
+
 /* Header */
 .header {
 }
@@ -132,6 +133,28 @@
 
 .custom-navbar .nav-link:hover {
   color: var(--color-rojo) !important;
+}
+
+/* Menú desplegable: fondo negro por defecto */
+.navbar .dropdown-menu {
+  background-color: #000;
+  border: none;
+  color: #ffffff;
+}
+
+/* Ítems del menú: fondo rojo y texto blanco al hover */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #e60000;
+  color: #ffffff;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #fff !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #e60000;
+  color: #fff !important;
 }
 
 
@@ -324,9 +347,9 @@
     color: #cc0000;
   }
   
-  /* =======================
-     Botón "Volver Arriba"
-  ========================== */
+  /* =================================
+     Botón "Volver Arriba" y WhastApp
+  ==================================== */
   #back-to-top {
     position: fixed;
     bottom: 30px;
@@ -343,6 +366,23 @@
   }
   #back-to-top:hover {
     background-color: #cc0000;
+  }
+
+  #whatsapp-btn {
+    position: fixed;
+    bottom: 90px; /* Se ubica arriba del botón de "Volver arriba" */
+    right: 27px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  #whatsapp-btn:hover {
+    background-color: #128c7e;
   }
   
   /* =======================
@@ -484,9 +524,23 @@
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .btn-center:hover {
   background-color: var(--color-rojo);
   color: var(--color-blanco);
+}
+
+.instructor-grad {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: var(--color-rojo);
+  color: var(--color-blanco);
+  font-size: 1.1rem;
+  font-family: 'AF PEPSI', sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 20px auto;
+  text-align: center;
 }
 
 /* Estilos para dispositivos móviles */
@@ -522,3 +576,5 @@
     padding: 30px !important;
   }
 }
+
+
