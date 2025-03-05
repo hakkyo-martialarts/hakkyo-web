@@ -544,37 +544,49 @@
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 850px) {
-  .container,
-  .section {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 15px !important;
-    text-align: center;
+@media (max-width: 768px) {
+  /* Contenedores y secciones ocupan el 100% del ancho y se centran */
+  @media (max-width: 768px) {
+    .container, .section {
+      width: 100vw !important;
+      max-width: 100vw !important;
+      margin: 0 !important;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
   }
 
+  @media (max-width: 768px) {
+    .section {
+      border: none !important;
+      box-shadow: none !important;
+    }
+  }
+  
+  /* Navbar: el contenedor se expande y se centra */
   .custom-navbar .container {
     width: 100% !important;
     padding: 0 10px !important;
     text-align: center;
   }
-
+  
+  /* Ajuste de la tipografía en enlaces de la navbar */
   .custom-navbar .nav-link {
     font-size: 1rem;
     margin: 0 5px;
-    text-align: center;
   }
-
-  .instructor-centers {
-    width: 100% !important;
-    margin: 20px auto !important;
-    padding: 0 5px; /* Pequeño padding lateral */
-  }
-  /* Ajustamos el recuadro gris para que tenga mayor padding */
-  .centers-list {
-    padding: 30px !important;
+  
+  * {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 }
+
+img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
 
 
