@@ -2,437 +2,424 @@
    Variables de color
 ========================== */
 :root {
-    --color-rojo: #e60000;
-    --color-blanco: #fff;
-    --color-negro: #000;
-  }
-  
-  /* =======================
-     Fuentes Personalizadas
-  ========================== */
-  @font-face {
-    font-family: 'AF PEPSI';
-    src: url('../fonts/AFPEPSI.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Eras Bold';
-    src: url('../fonts/ErasBold.otf') format('opentype');
-  }
-  @font-face {
-    font-family: 'Eras Demi';
-    src: url('../fonts/ErasDemi.otf') format('opentype');
-  }
-  @font-face {
-    font-family: 'Eras Light';
-    src: url('../fonts/ErasLight.otf') format('opentype');
-  }
-  
-  /* =======================
-     Estilos Globales
-  ========================== */
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
-    margin: 0;
-    padding: 60px;
-    text-align: center;
-  }
-  
-  /* =======================
-     Tipografía y Elementos de Texto
-  ========================== */
-  h1, h2, h3 {
-    font-family: 'Poppins', 'Arial', sans-serif;
-    color: var(--color-rojo);
-    font-weight: 600;
-  }
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.75rem; }
-  
-  h4, h5, h6 {
-    font-family: 'Eras Bold', sans-serif;
-    color: #333;
-  }
-  
-  p {
-    font-family: 'Arial', sans-serif;
-    color: var(--color-blanco);
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  /* Enlaces */
-  a {
-    font-family: 'Eras Light', sans-serif;
-    color: var(--color-rojo);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  a:hover {
-    color: #cc0000;
-  }
-  
-  /* =======================
-     Encabezado (Header)
-  ========================== */
-
-/* Header */
-.header {
+  --color-rojo: #e60000;
+  --color-blanco: #fff;
+  --color-negro: #000;
 }
 
-.header h1 {
-  font-size: 3rem;
-  font-weight: 700;
+/* =======================
+ Fuentes Personalizadas
+========================== */
+@font-face {
+  font-family: 'AF PEPSI';
+  src: url('../fonts/AFPEPSI.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Eras Bold';
+  src: url('../fonts/ErasBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Eras Demi';
+  src: url('../fonts/ErasDemi.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Eras Light';
+  src: url('../fonts/ErasLight.otf') format('opentype');
+}
+
+/* =======================
+ Estilos Globales
+========================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
   margin: 0;
-  padding: 20px;
+  padding: 60px;
+  text-align: center;
+}
+
+/* =======================
+ Tipografía y Elementos de Texto
+========================== */
+h1, h2, h3 {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  color: var(--color-rojo);
+  font-weight: 600;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+
+h4, h5, h6 {
+  font-family: 'Eras Bold', sans-serif;
+  color: #333;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  color: var(--color-blanco);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Enlaces */
+a {
+  font-family: 'Eras Light', sans-serif;
+  color: var(--color-rojo);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #cc0000;
+}
+
+/* =======================
+ Encabezado (Header)
+========================== */
+
+/* (Se eliminó la regla vacía de .header) */
+
+.header h1 {
+font-size: 3rem;
+font-weight: 700;
+margin: 0;
+padding: 20px;
 }
 
 /* Navbar básica */
 /* Estilos para la navbar */
 .custom-navbar {
-  background-color: var(--color-negro);
-  border-bottom: 2px solid var(--color-rojo);
-  padding: 5px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1050;
-  transition: background-color 0.3s ease;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
+background-color: var(--color-negro);
+border-bottom: 2px solid var(--color-rojo);
+padding: 5px 0;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1050;
+transition: background-color 0.3s ease;
+justify-content: center;
+align-items: center;
+display: flex;
+margin: 0 auto;
 }
 
 .custom-navbar .navbar-brand {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .navbar-logo {
-  height: 40px; /* Ajusta este valor según lo que desees para el logo */
-  /* Opcional: margen a la derecha para separar del texto si agregas otro elemento */
-  margin-right: 10px;
+height: 40px; /* Ajusta este valor según lo que desees para el logo */
+margin-right: 10px;
 }
 
 .custom-navbar .navbar-nav {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+display: flex;
+justify-content: center;
+width: 100%;
 }
 
 .custom-navbar .nav-link {
-  color: var(--color-blanco) !important;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  margin: 0 10px;
-  transition: color 0.3s ease;
+color: var(--color-blanco) !important;
+font-size: 0.95rem;
+text-transform: uppercase;
+margin: 0 10px;
+transition: color 0.3s ease;
 }
 
 .custom-navbar .nav-link:hover {
-  color: var(--color-rojo) !important;
+color: var(--color-rojo) !important;
 }
 
 /* Menú desplegable: fondo negro por defecto */
 .navbar .dropdown-menu {
-  background-color: #000;
-  border: none;
-  color: #ffffff;
-}
-
-/* Ítems del menú: fondo rojo y texto blanco al hover */
-.navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #e60000;
-  color: #ffffff;
+background-color: #000;
+border: none;
+color: #ffffff;
 }
 
 .navbar .dropdown-menu .dropdown-item {
-  color: #fff !important;
+color: #fff !important;
 }
-
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #e60000;
-  color: #fff !important;
+background-color: #e60000;
+color: #fff !important;
 }
 
-
-  /* =======================
-     Carousel (Academia)
-  ========================== */
-  #academiaCarousel img {
-    max-height: 500px;
-    object-fit: cover;
-  }
-  #academiaCarousel .carousel-item img {
-    width: 95%;       /* Ocupa el 95% del ancho del contenedor */
-    height: 500px;     /* Establece una altura fija (ajusta este valor según tus necesidades) */
-    object-fit: contain; /* Hace que la imagen se recorte para llenar el contenedor sin distorsionarse */
-    background-color: #000; /* Opcional: un fondo para que se integren mejor los espacios */
-  }
-  
-  /* =======================
-     Acordeón (Centros de Enseñanza)
-  ========================== */
-  .accordion-body iframe {
-    max-height: 300px;
-    object-fit: cover;
-  }
-  
-  /* =======================
-     Secciones
-  ========================== */
-  .section {
-    width: 75%;
-    margin: 40px auto; /* Esto centra la sección con márgenes laterales de 12.5% */
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #000000;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-rojo);
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    text-align: center; /* Centra el título */
-    padding-top: 40px; /* Ajusta el valor según necesites */
-  }
-  
-  /* =======================
-     Formularios
-  ========================== */
-  form {
-    margin: 30px auto;
-    max-width: 600px;
-    padding: 20px;
-    background: var(--color-negro);
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
-    border-radius: 8px;
-  }
-  input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #555;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family: 'Eras Light', sans-serif;
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
-  }
-  input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: var(--color-rojo);
-    box-shadow: 0 0 8px var(--color-rojo);
-  }
-  label {
-    font-family: 'Eras Light', sans-serif;
-    color: var(--color-blanco);
-    margin-bottom: 5px;
-    display: block;
-  }
-  
-  /* =======================
-     Tablas y Listas
-  ========================== */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
-  }
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  table th {
-    background-color: #444;
-    color: var(--color-blanco);
-  }
-  table tr:nth-child(even) {
-    background-color: #333;
-  }
-  
-  ul, ol {
-    margin: 20px 0;
-    padding: 0 20px;
-  }
-  li {
-    margin-bottom: 10px;
-    font-family: 'Eras Light', sans-serif;
-    color: #ffffff;
-  }
-  
-  /* =======================
-     Contenedor
-  ========================== */
-  .container {
-    width: 75%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* =======================
-     Botones
-  ========================== */
-  button, .btn {
-    background-color: var(--color-rojo);
-    color: var(--color-blanco);
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  button:hover, .btn:hover {
-    background-color: #cc0000;
-  }
-  .btn-secondary {
-    background-color: #333;
-    color: var(--color-blanco);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .btn-secondary:hover {
-    background-color: #555;
-  }
-  .btn-action {
-    background-color: var(--color-rojo);
-    color: var(--color-blanco);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .btn-action:hover {
-    background-color: #cc0000;
-  }
-  
-  /* =======================
-     Pie de Página (Footer)
-  ========================== */
-  footer {
-    background-color: #222;
-    color: var(--color-blanco);
-    padding: 30px 0;
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Eras Light', sans-serif;
-  }
-  footer a {
-    color: var(--color-rojo);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  footer a:hover {
-    color: #cc0000;
-  }
-  
-  /* =================================
-     Botón "Volver Arriba" y WhastApp
-  ==================================== */
-  #back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: var(--color-rojo);
-    color: var(--color-blanco);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  #back-to-top:hover {
-    background-color: #cc0000;
-  }
-
-  #whatsapp-btn {
-    position: fixed;
-    bottom: 90px; /* Se ubica arriba del botón de "Volver arriba" */
-    right: 27px;
-    background-color: #25d366;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  #whatsapp-btn:hover {
-    background-color: #128c7e;
-  }
-  
-  /* =======================
-     Enlaces de Contacto
-  ========================== */
-  .contact-links a {
-    color: var(--color-rojo);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-  }
-  .contact-links a i {
-    margin-right: 8px;
-    font-size: 1.3rem;
-  }
-  .contact-links a:hover {
-    color: #cc0000;
-  }
-  
-  /* =======================
-   Estilos para la sección de Instructores
+/* =======================
+ Carousel (Academia)
 ========================== */
+#academiaCarousel img {
+max-height: 500px;
+object-fit: cover;
+}
+#academiaCarousel .carousel-item img {
+width: 95%;
+height: 500px;
+object-fit: contain;
+background-color: #000;
+}
 
-/* Ajuste de columnas: se mantienen tres por fila en escritorio */
+/* =======================
+ Acordeón (Centros de Enseñanza)
+========================== */
+.accordion-body iframe {
+max-height: 300px;
+object-fit: cover;
+}
+
+/* =======================
+ Secciones
+========================== */
+.section {
+width: 75%;
+margin: 40px auto;
+padding: 80px 20px;
+text-align: center;
+background-color: #000000;
+color: #333;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+font-size: 2.5rem;
+font-weight: 700;
+color: var(--color-rojo);
+margin-bottom: 30px;
+text-transform: uppercase;
+text-align: center;
+padding-top: 40px;
+}
+
+/* =======================
+ Formularios
+========================== */
+form {
+margin: 30px auto;
+max-width: 600px;
+padding: 20px;
+background: var(--color-negro);
+box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+border-radius: 8px;
+}
+input, textarea, select {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #555;
+border-radius: 5px;
+box-sizing: border-box;
+font-family: 'Eras Light', sans-serif;
+background-color: var(--color-negro);
+color: var(--color-blanco);
+}
+input:focus, textarea:focus, select:focus {
+outline: none;
+border-color: var(--color-rojo);
+box-shadow: 0 0 8px var(--color-rojo);
+}
+label {
+font-family: 'Eras Light', sans-serif;
+color: var(--color-blanco);
+margin-bottom: 5px;
+display: block;
+}
+
+/* =======================
+ Tablas y Listas
+========================== */
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+font-family: Arial, sans-serif;
+}
+table th, table td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: left;
+}
+table th {
+background-color: #444;
+color: var(--color-blanco);
+}
+table tr:nth-child(even) {
+background-color: #333;
+}
+
+ul, ol {
+margin: 20px 0;
+padding: 0 20px;
+}
+li {
+margin-bottom: 10px;
+font-family: 'Eras Light', sans-serif;
+color: #ffffff;
+}
+
+/* =======================
+ Contenedor
+========================== */
+.container {
+width: 75%;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* =======================
+ Botones
+========================== */
+button, .btn {
+background-color: var(--color-rojo);
+color: var(--color-blanco);
+border: none;
+padding: 12px 20px;
+font-size: 1rem;
+font-weight: 700;
+text-transform: uppercase;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+button:hover, .btn:hover {
+background-color: #cc0000;
+}
+.btn-secondary {
+background-color: #333;
+color: var(--color-blanco);
+border: none;
+padding: 10px 20px;
+font-size: 1rem;
+font-weight: 600;
+text-transform: uppercase;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.btn-secondary:hover {
+background-color: #555;
+}
+.btn-action {
+background-color: var(--color-rojo);
+color: var(--color-blanco);
+border: none;
+padding: 10px 20px;
+font-size: 1rem;
+font-weight: 600;
+text-transform: uppercase;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.btn-action:hover {
+background-color: #cc0000;
+}
+
+/* =======================
+ Pie de Página (Footer)
+========================== */
+footer {
+background-color: #222;
+color: var(--color-blanco);
+padding: 30px 0;
+text-align: center;
+font-size: 1rem;
+font-family: 'Eras Light', sans-serif;
+}
+footer a {
+color: var(--color-rojo);
+text-decoration: none;
+transition: color 0.3s ease;
+}
+footer a:hover {
+color: #cc0000;
+}
+
+/* =================================
+ Botón "Volver Arriba" y WhastApp
+==================================== */
+#back-to-top {
+position: fixed;
+bottom: 30px;
+right: 30px;
+background-color: var(--color-rojo);
+color: var(--color-blanco);
+border: none;
+padding: 10px 15px;
+border-radius: 50%;
+cursor: pointer;
+display: none;
+z-index: 1000;
+transition: background-color 0.3s ease;
+}
+#back-to-top:hover {
+background-color: #cc0000;
+}
+
+#whatsapp-btn {
+position: fixed;
+bottom: 90px;
+right: 27px;
+background-color: #25d366;
+color: #fff;
+border: none;
+padding: 10px 15px;
+border-radius: 50%;
+font-size: 1.3rem;
+z-index: 1000;
+transition: background-color 0.3s ease;
+}
+#whatsapp-btn:hover {
+background-color: #128c7e;
+}
+
+/* =======================
+ Enlaces de Contacto
+========================== */
+.contact-links a {
+color: var(--color-rojo);
+text-decoration: none;
+margin: 0 15px;
+font-size: 1.1rem;
+transition: color 0.3s ease;
+display: inline-flex;
+align-items: center;
+}
+.contact-links a i {
+margin-right: 8px;
+font-size: 1.3rem;
+}
+.contact-links a:hover {
+color: #cc0000;
+}
+
+/* =======================
+ Estilos para la sección de Instructores
+========================== */
 .instructor-card {
-  background-color: var(--color-negro);
-  border: none;
+background-color: var(--color-negro);
+border: none;
 }
 .instructor-card .card-img-top {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;      /* Recorta la imagen para llenar el contenedor */
-    object-position: top;   /* Alinea la imagen de modo que la parte superior (la cara) sea visible */
-    display: block;         /* Permite que el margin auto funcione correctamente */
-    margin: 0 auto;         /* Centra horizontalmente la imagen */
-  }
-  
-  .instructor-card .card-title {
-    font-family: 'AF PEPSI', sans-serif;
-    color: var(--color-rojo);
-    margin-bottom: 5px;
-  }
-  
-  .instructor-card .card-text {
-    font-family: 'Eras Demi', sans-serif;
-    color: var(--color-blanco);
-  }
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin: 0 auto;
+}
+
+.instructor-card .card-title {
+  font-family: 'AF PEPSI', sans-serif;
+  color: var(--color-rojo);
+  margin-bottom: 5px;
+}
+
+.instructor-card .card-text {
+  font-family: 'Eras Demi', sans-serif;
+  color: var(--color-blanco);
+}
 
 #what,
 #about,
@@ -442,171 +429,138 @@
 #download, 
 #centros-kickboxing, 
 #instructores-kickboxing {
-    width: 80%;
-    padding: 20px;
-    background-color: #000; /* Fondo negro */
-    border-radius: 8px;
-    margin: 40px auto 20px auto; /* Centrado con margen superior e inferior */
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Puedes ajustar la sombra si lo deseas */
-    color: #fff; /* Texto blanco para buen contraste */
+  width: 80%;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 8px;
+  margin: 40px auto 20px auto;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+  color: #fff;
 }
 
 /* Personaliza el encabezado del acordeón para que se vea en rojo */
 .accordion-header .accordion-button {
-  background-color: var(--color-rojo) !important;
-  color: var(--color-blanco) !important;
-  font-weight: 600;
+background-color: var(--color-rojo) !important;
+color: var(--color-blanco) !important;
+font-weight: 600;
 }
-
-/* Opcional: al pasar el mouse, mantener el mismo estilo o ajustar según prefieras */
 .accordion-header .accordion-button:hover,
 .accordion-header .accordion-button:focus {
-  background-color: #cc0000 !important;
-  color: var(--color-blanco) !important;
+background-color: #cc0000 !important;
+color: var(--color-blanco) !important;
 }
-
-/* El cuerpo del acordeón puede quedarse con el estilo actual o ajustarlo */
 .accordion-body {
-  background-color: #141414 !important; /* o el color que prefieras para el fondo del contenido */
-  color: var(--color-blanco) !important;
-  border-top: 1px solid #333 !important;
+background-color: #141414 !important;
+color: var(--color-blanco) !important;
+border-top: 1px solid #333 !important;
 }
 
 .instructor-centers {
-  width: 80%;
-  margin: 40px auto;
+width: 80%;
+margin: 40px auto;
 }
 
 .instructor-header {
-  background-color: var(--color-negro);  /* Fondo negro */
-  border: 2px solid var(--color-rojo);     /* Borde rojo */
-  color: var(--color-blanco);              /* Texto en blanco */
-  padding: 15px;
-  border-radius: 20px;                     /* Bordes redondeados */
-  text-align: center;
-  font-size: 1.75rem;
-  font-family: 'AF PEPSI', sans-serif;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, color 0.3s ease;
+background-color: var(--color-negro);
+border: 2px solid var(--color-rojo);
+color: var(--color-blanco);
+padding: 15px;
+border-radius: 20px;
+text-align: center;
+font-size: 1.75rem;
+font-family: 'AF PEPSI', sans-serif;
+margin-bottom: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .instructor-header:hover {
-  background-color: var(--color-rojo);
-  color: var(--color-blanco);
+background-color: var(--color-rojo);
+color: var(--color-blanco);
 }
-
 
 .centers-list {
-  background-color: #141414;
-  color: var(--color-blanco);
-  padding: 20px;
-  border-radius: 5px;
+background-color: #141414;
+color: var(--color-blanco);
+padding: 20px;
+border-radius: 5px;
 }
 
 .center-item {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .center-item h5 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--color-rojo);
+margin-bottom: 10px;
+font-size: 1.2rem;
+font-weight: 600;
+color: var(--color-rojo);
 }
 
 .btn-center {
-  background-color: transparent;
-  border: 2px solid var(--color-rojo);
-  color: var(--color-rojo);
-  border-radius: 50px;
-  padding: 10px 20px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+background-color: transparent;
+border: 2px solid var(--color-rojo);
+color: var(--color-rojo);
+border-radius: 50px;
+padding: 10px 20px;
+font-weight: bold;
+transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .btn-center:hover {
-  background-color: var(--color-rojo);
-  color: var(--color-blanco);
+background-color: var(--color-rojo);
+color: var(--color-blanco);
 }
 
 .instructor-grad {
-  display: inline-block;
-  padding: 5px 12px;
-  background-color: var(--color-rojo);
-  color: var(--color-blanco);
-  font-size: 1.1rem;
-  font-family: 'AF PEPSI', sans-serif;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 0 auto 20px auto;
-  text-align: center;
+display: inline-block;
+padding: 5px 12px;
+background-color: var(--color-rojo);
+color: var(--color-blanco);
+font-size: 1.1rem;
+font-family: 'AF PEPSI', sans-serif;
+border-radius: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+margin: 0 auto 20px auto;
+text-align: center;
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 850px) {
+@media (max-width: 600px) {
+  /* Ocupa toda la pantalla */
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .container,
   .section {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 15px !important;
-    text-align: center;
-@media (max-width: 768px) {
-  /* Contenedores y secciones ocupan el 100% del ancho y se centran */
-  @media (max-width: 768px) {
-    .container, .section {
-      width: 100vw !important;
-      max-width: 100vw !important;
-      margin: 0 !important;
-      padding-left: 10px !important;
-      padding-right: 10px !important;
-    }
+    width: 100%;
+    margin: 0;
+    padding: 10px;
   }
-
-    .section {
-      border: none !important;
-      box-shadow: none !important;
-    }
   
-
-  
-  /* Navbar: el contenedor se expande y se centra */
-  .custom-navbar .container {
-    width: 100% !important;
-    padding: 0 10px !important;
+  /* Centrar todos los textos */
+  h1, h2, h3, h4, h5, h6, p, a, button, .btn {
     text-align: center;
   }
-
   
-  /* Ajuste de la tipografía en enlaces de la navbar */
-  .custom-navbar .nav-link {
-    font-size: 1rem;
-    margin: 0 5px;
-    text-align: center;
+  /* Ajuste para evitar desbordes en botones y recuadros */
+  button, .btn, .card, .instructor-card, .centers-list, .accordion-body {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
   }
-
-  .instructor-centers {
-    width: 100% !important;
-    margin: 20px auto !important;
-    padding: 0 5px; /* Pequeño padding lateral */
+  
+  /* Eliminar los bordes rojos en vista móvil */
+  .instructor-header,
+  .custom-navbar {
+    border: none !important;
   }
-  /* Ajustamos el recuadro gris para que tenga mayor padding */
+  
+  /* Ajustar el recuadro gris para que ocupe casi toda la pantalla */
   .centers-list {
-    padding: 30px !important;
-  
-  * {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 5px !important;
   }
 }
 
-img {
-  width: 100% !important;
-  height: auto !important;
-}
-
-
-}
-}
-}
