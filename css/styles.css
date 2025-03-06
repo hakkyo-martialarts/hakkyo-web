@@ -564,12 +564,11 @@
     }
   }
 
-  @media (max-width: 768px) {
     .section {
       border: none !important;
       box-shadow: none !important;
     }
-  }
+  
 
   
   /* Navbar: el contenedor se expande y se centra */
@@ -606,6 +605,7 @@ img {
   width: 100% !important;
   height: auto !important;
 }
+
 
 }
 }
