@@ -142,7 +142,7 @@
 
   <!-- Instructores -->
   <section id="instructores" class="container section">
-    <h3 class="section-title">Instructores</h3>
+    <h3 class="section-title" style="font-size: 2rem;">Instructores</h3>
     <p>Todos nuestros instructores estan capacitados, siendo cada uno de ellos referentes de la practica en los centros donde enseñan Taekwon-do ITF.</p>
     <div class="row">
       <!-- Instructor 1 -->
@@ -319,7 +319,7 @@
   <div class="centers-list">
     <div class="center-item">
       <h5>Gym Hakkyo sede Santa Fe</h5>
-      <p><strong>Dirección:</strong> <br>Av. Santa Fe 4226, ABA</p>
+      <p><strong>Dirección:</strong> <br>Av. Santa Fe 4226, CABA</p>
       <p><strong>Infantiles:</strong> <br>Lunes, Miércoles y Viernes 16h y 17h <br> Martes y Jueves 17h y 18h</p>
       <p><strong>Juveniles y Adultos:</strong> <br>Lunes, Miércoles y Viernes 21h <br>Martes y Jueves 20h</p>
     </div>
@@ -413,7 +413,7 @@
 
       <!-- Bloque de centros para Maximiliano Iglesia -->
 <div class="instructor-centers" id="iglesia-centers">
-  <h4 class="instructor-header">Maximiliano Iglesia</h4>
+  <h4 class="instructor-header">Maximiliano <br>Iglesia</h4>
   <p class="instructor-grad">III Dan</p>
   <div class="centers-list">
     <div class="center-item">
@@ -505,13 +505,35 @@
 
   <hr class="separator">
 
-  <!-- Teoría del Taekwon-do -->
-  <section id="teoria" class="container section">
-    <h3 class="section-title">Teoria del Taekwon-do</h3>
-    <section id="download" class="text-center my-5">
-      <a href="resources/TEORIAExamenHakkyo.pdf" download class="btn btn-download">Descargar PDF Teoria del Taekwon-do</a>
-    </section>
-  </section>
+  <!-- Bloque para el PDF de Teoría -->
+<button id="show-pdf-theory" class="btn btn-primary">Ver TEORIA DEL TAEKWON-DO</button>
+
+<section id="pdf-theory-section" style="display: none; margin-top: 20px;">
+  <!-- Botón para cerrar la vista del PDF de Teoría -->
+  <button id="close-pdf-theory" class="btn btn-secondary" style="margin-bottom: 10px;">Cerrar Teoría</button>
+  
+  <!-- PDF embebido en un iframe (reemplazar la ruta por la correcta) -->
+  <iframe src="resources/TEORIAExamenHakkyo.pdf" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+  
+  <!-- Botón de descarga del PDF de Teoría -->
+  <a href="resources/TEORIAExamenHakkyo.pdf" download class="btn btn-primary" style="margin-top: 10px;">Descargar Teoría</a>
+</section>
+
+<hr class="separator">
+
+<!-- Bloque opcional para otro PDF -->
+<button id="show-pdf-other" class="btn btn-primary">Ver PROGRAMA DE EXAMEN</button>
+
+<section id="pdf-other-section" style="display: none; margin-top: 20px;">
+  <!-- Botón para cerrar la vista del otro PDF -->
+  <button id="close-pdf-other" class="btn btn-secondary" style="margin-bottom: 10px;">Cerrar PDF</button>
+  
+  <!-- PDF embebido en un iframe (reemplazar la ruta por la correcta) -->
+  <iframe src="resources/PROGRAMA DE EXAMEN - ACADEMIA HAKKYO.pdf" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+  
+  <!-- Botón de descarga del otro PDF -->
+  <a href="resources/PROGRAMA DE EXAMEN - ACADEMIA HAKKYO.pdf" download class="btn btn-primary" style="margin-top: 10px;">Descargar PDF</a>
+</section>
 
   <hr class="separator">
 
@@ -527,85 +549,174 @@
       <p>Combinan golpes, patadas, codos y rodillas para entrenamientos intensos y completos.</p>
     </section>
 
-    <!-- Centros de enseñanza (Acordeón) -->
-  <section id="centros" class="container section">
-    <h3 class="section-title">Centros de enseñanza</h3>
-    <p>Gym Hakkyo ofrece clases de Kick Boxing & Muay Thai en sus sedes. Además, los intructores dictan clases en otros espacios como gimnasios de otras cadenas, centros privados, colegios y clases personalizadas.</p>
-    <div class="accordion" id="accordionCentros">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSantaFe">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSantaFe" aria-expanded="true" aria-controls="collapseSantaFe">
-            Sede Santa Fe
-          </button>
-        </h2>
-        <div id="collapseSantaFe" class="accordion-collapse collapse show" aria-labelledby="headingSantaFe" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4328607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20Santa%20Fe%204226!5e0!3m2!1ses!2sar!4v1684298564808!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Dirección: Av. Sta. Fe 4226, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01147775308</p>
+    <!-- Instructores -->
+  <section id="instructores" class="container section">
+    <h3 class="section-title" style="font-size: 2rem;">Instructores</h3>
+    <p>Todos nuestros instructores estan capacitados, siendo cada uno de ellos referentes de la practica en los centros donde enseñan Taekwon-do ITF.</p>
+    <div class="row">
+      <!-- Instructor 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="assets/images/Instructores/Figari.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Federico Figari" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Federico <br>Figari</h5>
+            <a href="#figari-kickcenters" class="btn btn-center">
+              <i class="fas fa-map-marker-alt"></i> Palermo
+            </a>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingCallao">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCallao" aria-expanded="false" aria-controls="collapseCallao">
-            Sede Callao
-          </button>
-        </h2>
-        <div id="collapseCallao" class="accordion-collapse collapse" aria-labelledby="headingCallao" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457973221331!2d-58.4128607!3d-34.5873612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d19ccecc1%3A0xf6975504ee23790!2sAv.%20C%C3%B3rdoba%201819!5e0!3m2!1ses!2sar!4v1684298564809!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Dirección: Av. Córdoba 1819, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01148136828</p>
+      <!-- Instructor 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="assets/images/Instructores/Moreno.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Roberto Atorino" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Roberto <br>Atorino</h5>
+            <a href="#atorino-kickcenters" class="btn btn-center">
+              <i class="fas fa-map-marker-alt"></i> Recoleta
+            </a>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingLacroze">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLacroze" aria-expanded="false" aria-controls="collapseLacroze">
-            Sede Lacroze
-          </button>
-        </h2>
-        <div id="collapseLacroze" class="accordion-collapse collapse" aria-labelledby="headingLacroze" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7719672746443!2d-58.456493324885805!3d-34.58463605648955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e5b7519ae5%3A0x2e47703b9c7ad6dc!2sGym%20Hakkyo%20-%20Sede%20Lacroze!5e0!3m2!1ses-419!2sar!4v1736518227521!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Dirección: Federico Lacroze 3961, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01167609727</p>
+      <!-- Instructor 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="assets/images/Instructores/Scarpino.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Maximo Aguero" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Maximo <br>Aguero</h5>
+            <a href="#aguero-kickcenters" class="btn btn-center">
+              <i class="fas fa-map-marker-alt"></i> Chacarita
+            </a>        
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSubzero">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubzero" aria-expanded="false" aria-controls="collapseSubzero">
-            Sede Subzero
-          </button>
-        </h2>
-        <div id="collapseSubzero" class="accordion-collapse collapse" aria-labelledby="headingSubzero" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.593271542879!2d-58.392056324884166!3d-34.614445058063794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadc02bb51c5%3A0xc818cc80f3da6521!2sGym%20Hakkyo%20-%20Sede%20Subzero!5e0!3m2!1ses-419!2sar!4v1736518320868!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Dirección: Venezuela 1637, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01112345678</p>
+      <!-- Instructor 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="assets/images/Instructores/Yucci.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Claudio Quiroga" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Claudio <br>Quiroga</h5>
+            <a href="#quiroga-kickcenters" class="btn btn-center">
+              <i class="fas fa-map-marker-alt"></i> Moreno
+            </a>
+              </div>
+        </div>
+      </div>
+      <!-- Instructor 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="assets/images/Instructores/Marcelo.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Valentino Baggio" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Valentino <br>Baggio</h5>
+            <p class="card-text">III Dan</p>
+            <a href="#baggio-kickcenters" class="btn btn-center">
+              <i class="fas fa-map-marker-alt"></i> Nuñez
+            </a>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingCiudad">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCiudad" aria-expanded="false" aria-controls="collapseCiudad">
-            Sede Ciudad
-          </button>
-        </h2>
-        <div id="collapseCiudad" class="accordion-collapse collapse" aria-labelledby="headingCiudad" data-bs-parent="#accordionCentros">
-          <div class="accordion-body">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3871481534616!2d-58.46118112488816!3d-34.54375185433268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4214094eb49%3A0xbd57661b573c59d2!2sTeam%20Hakkyo!5e0!3m2!1ses-419!2sar!4v1740010922146!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Dirección: Miguel B. Sánchez 1049, Cdad. Autónoma de Buenos Aires<br>Teléfono: 01147049557</p>
+      <!-- Instructor 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card instructor-card text-center">
+          <img src="assets/images/Instructores/Aguero.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Maximiliano Iglesia" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Maximiliano <br>Iglesia</h5>
+            <p class="card-text">III Dan</p>
+            <a href="#iglesia-kickcenters" class="btn btn-center">
+              <i class="fas fa-map-marker-alt"></i> Montserrat
+            </a>          
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-    <hr class="separator">
-    <section id="instructores-kickboxing" class="container section">
-      <h3 class="section-title">Instructores</h3>
-      <p>Información sobre los instructores de Kick Boxing & Muay Thai.</p>
-    </section>
+  <hr class="separator">
+
+   <!-- Centros de enseñanza (Acordeón) -->
+
+    <h3 class="section-title">Centros de Enseñanza</h3>
+    <p>A continuación se muestran los centros en los que cada instructor dicta clases:</p>
+    <div class="accordion" id="accordionCentros">
+      <!-- Instructor: Federico Figari -->
+      <!-- Bloque de centros para Federico Figari -->
+<div class="instructor-centers kick" id="figari-kickcenters">
+  <h4 class="instructor-header">Federico Figari</h4>
+  <div class="centers-list">
+    <div class="center-item">
+      <h5>Gym Hakkyo sede Santa Fe</h5>
+      <p><strong>Dirección:</strong> <br>Av. Santa Fe 4226, CABA</p>
+      <p><strong>Juveniles y Adultos:</strong> <br>Lunes, Miércoles y Viernes 19h y 20h <br>Martes y Jueves 8h, 19h, y 21sh</p>
+    </div>
+    <!-- Agrega más center-item según corresponda -->
+  </div>
+</div>
+
   
+      <!-- Instructor: Roberto Atorino -->
+      <div class="instructor-centers kick" id="atorino-kickcenters">
+        <h4 class="instructor-header">Roberto Atorino</h4>
+        <div class="centers-list">
+          <div class="center-item">
+            <h5>Gym Hakkyo sede Callao</h5>
+            <p><strong>Dirección:</strong> <br>Av. Cordoba 1819, CABA</p>
+            <p><strong>Juveniles y Adultos:</strong> <br>Lunes, Miercoles y Viernes 21h</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Instructor: Maximo Aguero -->
+      <div class="instructor-centers kick" id="aguero-kickcenters">
+        <h4 class="instructor-header">Maximo Aguero</h4>
+        <div class="centers-list">
+          <div class="center-item">
+            <h5>Gym Hakkyo sede Lacroze</h5>
+            <p><strong>Dirección:</strong> <br>Av. Lacroze 3961</p>
+            <p><strong>Juveniles:</strong> <br>Martes y Jueves 20h 
+            <p><strong>Adultos:</strong> <br>Martes y Jueves 20h 
+          </div>
+        </div>
+      </div>
+
+      <!-- Instructor: Claudio Quiroga -->
+<div class="instructor-centers kick" id="quiroga-kickcenters">
+  <h4 class="instructor-header">Claudio Quiroga</h4>
+  <div class="centers-list">
+    <div class="center-item">
+      <h5>La Base</h5>
+      <p><strong>Dirección:</strong> <br>Rosalía de castro y Miguel Geronimo Galarza, Moreno</p>
+      <p><strong>Infantiles:</strong> <br>Lunes y Miercoles 10h</p>
+      <p><strong>Adultos:</strong> <br>Martes y Jueves 19h</p>
+    </div>
+    <!-- Agrega más center-item aquí si Natalia dicta clases en otros centros -->
+  </div>
+</div>
+
+
+      <!-- Bloque de centros para Valentino Baggio -->
+<div class="instructor-centers kick" id="baggio-kickcenters">
+  <h4 class="instructor-header">Valentino Baggio</h4>
+  <div class="centers-list">
+    <div class="center-item">
+      <h5>Team Hakkyo Ciudad</h5>
+      <p><strong>Dirección:</strong> <br>Miguel B. Sanchez 1048, CABA</p>
+      <p><strong>Infantiles:</strong> <br>Lunes, Miercoles y Viernes 18h</p>
+      <p><strong>Adultos:</strong> <br>Lunes a Sabado 17h a 22h</p>
+    </div>
+    <!-- Agrega más center-item aquí si Marcelo dicta clases en otros centros -->
+  </div>
+</div>
+<!-- Bloque de centros para Maximiliano Iglesia -->
+<div class="instructor-centers kick" id="iglesia-kickcenters">
+  <h4 class="instructor-header">Maximiliano Iglesia</h4>
+  <div class="centers-list">
+    <div class="center-item">
+      <h5>Gym Hakkyo sede Subzero</h5>
+      <p><strong>Dirección:</strong> <br>Venezuela 1637, CABA</p>
+      <p><strong>Infantiles:</strong> <br>Martes y Jueves 17h</p>
+      <p><strong>Adultos:</strong> <br>Martes y Jueves 17h</p>
+    </div>
+    <!-- Agrega más center-item aquí si Maximo dicta clases en otros centros -->
+  </div>
+</div>
 
   <hr class="separator">
 
@@ -626,6 +737,7 @@
         <i class="fab fa-youtube"></i> Hakkyo Martial Arts
       </a>
     </div>
+
     <h2 class="section-title" style="padding-top: 30px">Contacto</h2>
     <p>Para más información, contáctanos mediante el formulario o visita nuestras redes sociales.</p>
     <form>
@@ -704,6 +816,39 @@
     });
   });
   </script>
-  
+<!-- Script para alternar la visibilidad de cada bloque -->
+<script>
+  // Para la Teoría
+  const showPdfTheoryBtn = document.getElementById("show-pdf-theory");
+  const closePdfTheoryBtn = document.getElementById("close-pdf-theory");
+  const pdfTheorySection = document.getElementById("pdf-theory-section");
+
+  showPdfTheoryBtn.addEventListener("click", function() {
+    pdfTheorySection.style.display = "block";
+    showPdfTheoryBtn.style.display = "none";
+  });
+
+  closePdfTheoryBtn.addEventListener("click", function() {
+    pdfTheorySection.style.display = "none";
+    showPdfTheoryBtn.style.display = "inline-block";
+  });
+
+  // Para el otro PDF (opcional)
+  const showPdfOtherBtn = document.getElementById("show-pdf-other");
+  const closePdfOtherBtn = document.getElementById("close-pdf-other");
+  const pdfOtherSection = document.getElementById("pdf-other-section");
+
+  showPdfOtherBtn.addEventListener("click", function() {
+    pdfOtherSection.style.display = "block";
+    showPdfOtherBtn.style.display = "none";
+  });
+
+  closePdfOtherBtn.addEventListener("click", function() {
+    pdfOtherSection.style.display = "none";
+    showPdfOtherBtn.style.display = "inline-block";
+  });
+</script>
+
+
 </body>
 </html>
