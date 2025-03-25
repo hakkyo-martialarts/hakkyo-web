@@ -482,11 +482,6 @@ background-color: var(--color-rojo);
 color: var(--color-blanco);
 }
 
-.instructor-centers.kick .instructor-header {
-  border: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
 
 .centers-list {
 background-color: #141414;
