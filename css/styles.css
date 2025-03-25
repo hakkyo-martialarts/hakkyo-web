@@ -422,13 +422,16 @@ border: none;
 }
 
 #what,
+#what-kick,
 #about,
 #centros, 
 #instructores, 
 #teoria, 
 #download, 
-#centros-kickboxing, 
-#instructores-kickboxing {
+#kickboxing,
+#intructores-centros, 
+#instructores-kick,
+#contact {
   width: 80%;
   padding: 20px;
   background-color: #000;
@@ -477,6 +480,12 @@ transition: background-color 0.3s ease, color 0.3s ease;
 .instructor-header:hover {
 background-color: var(--color-rojo);
 color: var(--color-blanco);
+}
+
+.instructor-centers.kick .instructor-header {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .centers-list {
@@ -571,6 +580,10 @@ text-align: center;
       text-align: center;
       padding: 10px;
       box-sizing: border-box;
+    }
+
+    .pdf-viewer {
+      height: 90vh !important;
     }
 
 }

@@ -32,6 +32,7 @@
   <link rel="shortcut icon" href="assets/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  
 </head>
 <body>
   <!-- Header -->
@@ -515,13 +516,15 @@
   <button id="close-pdf-theory" class="btn btn-secondary" style="margin-bottom: 10px;">Cerrar Teoría</button>
   
   <!-- PDF embebido en un iframe (reemplazar la ruta por la correcta) -->
-  <iframe src="resources/TEORIAExamenHakkyo.pdf" style="width: 100%; height: 600px;" frameborder="0"></iframe>
-  
+  <iframe src="resources/TEORIAExamenHakkyo.pdf" class="pdf-viewer" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+
   <!-- Botón de descarga del PDF de Teoría -->
   <a href="resources/TEORIAExamenHakkyo.pdf" download class="btn btn-primary" style="margin-top: 10px;">Descargar Teoría</a>
 </section>
+</section>
 
 <hr class="separator">
+
 <section id="programa" class="container section">
 <!-- Bloque opcional para otro PDF -->
 <button id="show-pdf-other" class="btn btn-primary">Ver PROGRAMA DE EXAMEN</button>
@@ -531,10 +534,11 @@
   <button id="close-pdf-other" class="btn btn-secondary" style="margin-bottom: 10px;">Cerrar PDF</button>
   
   <!-- PDF embebido en un iframe (reemplazar la ruta por la correcta) -->
-  <iframe src="resources/PROGRAMA DE EXAMEN - ACADEMIA HAKKYO.pdf" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+  <iframe src="resources/PROGRAMA DE EXAMEN - ACADEMIA HAKKYO.pdf" class="pdf-viewer" style="width: 100%; height: 600px;" frameborder="0"></iframe>
   
   <!-- Botón de descarga del otro PDF -->
   <a href="resources/PROGRAMA DE EXAMEN - ACADEMIA HAKKYO.pdf" download class="btn btn-primary" style="margin-top: 10px;">Descargar PDF</a>
+</section>
 </section>
 
   <hr class="separator">
@@ -630,12 +634,13 @@
           </div>
         </div>
       </div>
+    </section>
 
   <hr class="separator">
 
    <!-- Centros de enseñanza (Acordeón) -->
 
-   <section id="instructores-centros" class="container section"></section>
+   <section id="instructores-centros" class="container section">
     <h3 class="section-title">Centros de Enseñanza</h3>
     <p>A continuación se muestran los centros en los que cada instructor dicta clases:</p>
     <div class="accordion" id="accordionCentros">
@@ -720,7 +725,7 @@
     <!-- Agrega más center-item aquí si Maximo dicta clases en otros centros -->
   </div>
 </div>
-
+</section>
   <hr class="separator">
 
   <!-- Contacto -->
