@@ -22,12 +22,19 @@ body {
 .navbar {
     transition: all 0.4s ease;
     padding: 20px 0;
+    /* CAMBIO: Aplicamos el fondo oscuro directamente aquí */
+    background-color: rgba(10, 10, 10, 0.95); 
+    /* Opcional: Esto agrega un efecto de desenfoque moderno detrás del menú (como vidrio) */
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Línea sutil para separar */
 }
+
+/* Estado al hacer Scroll (Solo achicamos la altura) */
 .navbar.scrolled {
-    background-color: rgba(10, 10, 10, 0.95);
     padding: 10px 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
+
 .nav-link {
     color: white !important;
     text-transform: uppercase;
@@ -37,6 +44,7 @@ body {
     margin: 0 10px;
     position: relative;
 }
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -45,12 +53,15 @@ body {
     background-color: var(--primary);
     transition: width 0.3s;
 }
+
 .nav-link:hover::after { width: 100%; }
+
 .btn-contact {
     border: 1px solid var(--primary);
     border-radius: 20px;
     padding: 5px 20px !important;
 }
+
 .btn-contact:hover {
     background-color: var(--primary);
 }
@@ -127,7 +138,7 @@ h1 {
     color: #666;
     padding: 8px 25px;
     border-radius: 30px;
-    margin: 0 5px;
+    margin: 10px 5px; /* CAMBIO: 10px arriba/abajo, 5px a los costados */
     transition: 0.3s;
 }
 .btn-filter.active, .btn-filter:hover {
@@ -286,5 +297,50 @@ h1 {
     /* Ajuste en tarjetas de instructores para móviles */
     .instructor-card .img-wrapper {
         height: 300px; /* Un poco más bajo en celular para que no sea eterno scrollear */
+    }
+
+    /* El contenedor empieza recortado */
+    #instructors-wrapper {
+        /* Altura calculada para mostrar aprox 2 tarjetas y media */
+        max-height: 1100px; 
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out; /* Animación suave al abrir */
+    }
+
+    /* Clase que agregaremos con JS para abrirlo */
+    #instructors-wrapper.expanded {
+        max-height: 5000px; /* Un número alto para asegurar que entren todos */
+    }
+
+    /* Efecto de desvanecimiento negro al final */
+    #grid-fade {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px; /* Altura del degradado */
+        background: linear-gradient(to bottom, transparent, var(--dark));
+        pointer-events: none; /* Para que no bloquee clics si queda algo abajo */
+        transition: opacity 0.3s;
+    }
+}
+
+/* Caja de texto con efecto vidrio */
+.hero-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Negro al 75% de opacidad */
+    padding: 40px;
+    border-radius: 20px; /* Bordes redondeados modernos */
+    backdrop-filter: blur(8px); /* Efecto borroso detrás de la caja */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+    display: inline-block; /* La caja se ajusta al contenido */
+    max-width: 900px; /* Que no sea excesivamente ancha */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra para darle profundidad */
+}
+
+/* Ajuste para celular para que la caja no toque los bordes */
+@media (max-width: 768px) {
+    .hero-box {
+        padding: 20px;
+        width: 90%; /* Ocupa el 90% del ancho en celular */
     }
 }

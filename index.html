@@ -50,17 +50,20 @@
     </nav>
 
     <section id="inicio" class="hero d-flex align-items-center">
-        <div class="overlay"></div>
-        <div class="container text-center content animate__animated animate__fadeIn">
+    <div class="overlay"></div>
+    <div class="container text-center content">
+        
+        <div class="hero-box animate__animated animate__fadeIn">
             <h5 class="text-uppercase text-danger tracking-wide">Federico Figari presenta</h5>
             <h1 class="display-1 fw-bold text-white mb-4">ACADEMIA <span class="text-stroke">HAKKYO</span></h1>
             <p class="lead text-white-50 mb-5">Taekwon-Do ITF · Kick Boxing · Muay Thai</p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="#disciplinas" class="btn btn-danger btn-lg rounded-pill px-5">Empezar</a>
-                <a href="https://wa.me/+5491140725517" target="_blank" class="btn btn-outline-light btn-lg rounded-pill icon-btn"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/5491140725517" target="_blank" class="btn btn-outline-light btn-lg rounded-pill icon-btn"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
-    </section>
+        </div>
+</section>
 
     <section id="disciplinas" class="py-5 bg-darker">
         <div class="container">
@@ -108,7 +111,11 @@
                 </div>
             </div>
 
-            <div class="row g-4" id="instructor-grid">
+            <div id="instructors-wrapper" class="position-relative">
+    
+    <div class="row g-4" id="instructor-grid">
+       
+    <div id="grid-fade" class="d-md-none"></div>
     
     <div class="col-lg-3 col-md-4 col-sm-6 filter-item tkd kick">
         <div class="instructor-card">
@@ -167,6 +174,20 @@
     </div>
 
     <div class="col-lg-3 col-md-4 col-sm-6 filter-item tkd kick">
+    <div class="instructor-card">
+        <div class="img-wrapper">
+            <img src="assets/images/Instructores/Marcelo.jpg" alt="Marcelo De La Parte">
+        </div>
+        <div class="info">
+            <h4>Marcelo De La Parte</h4>
+            <span class="badge bg-dark border border-secondary mb-2">IV DAN</span>
+            <span class="d-block small text-white-50">Taekwon-Do & Kick Boxing</span>
+            <button class="btn-sedes" data-bs-toggle="modal" data-bs-target="#modalMarcelo">Ver Sedes</button>
+        </div>
+    </div>
+</div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 filter-item tkd kick">
         <div class="instructor-card">
             <div class="img-wrapper">
                 <img src="assets/images/Instructores/Aguero.jpg" alt="Maximo Agüero">
@@ -207,22 +228,6 @@
             </div>
         </div>
     </div>
-
-   
-
-    <div class="col-lg-3 col-md-4 col-sm-6 filter-item tkd kick">
-    <div class="instructor-card">
-        <div class="img-wrapper">
-            <img src="assets/images/Instructores/Marcelo.jpg" alt="Marcelo De La Parte">
-        </div>
-        <div class="info">
-            <h4>Marcelo De La Parte</h4>
-            <span class="badge bg-dark border border-secondary mb-2">III DAN</span>
-            <span class="d-block small text-white-50">Taekwon-Do & Kick Boxing</span>
-            <button class="btn-sedes" data-bs-toggle="modal" data-bs-target="#modalMarcelo">Ver Sedes</button>
-        </div>
-    </div>
-</div>
 
     <div class="col-lg-3 col-md-4 col-sm-6 filter-item tkd">
         <div class="instructor-card">
@@ -280,34 +285,39 @@
         </div>
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 filter-item kick">
-        <div class="instructor-card">
-            <div class="img-wrapper">
-                <img src="assets/images/Instructores/Iglesia.jpg" alt="Valentino Baggio">
-            </div>
-            <div class="info">
-                <h4>Valentino Baggio</h4>
-                <span class="badge bg-dark border border-secondary mb-2"></span>
-                <span class="d-block small text-white-50">Kick Boxing</span>
-                <button class="btn-sedes" data-bs-toggle="modal" data-bs-target="#modalBaggio">Ver Sedes</button>
-            </div>
+    <div class="instructor-card border-0 shadow">
+        <div class="img-wrapper">
+            <img src="assets/images/HAKKYO.png" style="object-position: center; filter: grayscale(100%) brightness(0.6);" alt="Roberto Atorino">
         </div>
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-sm-6 filter-item kick">
-        <div class="instructor-card">
-            <div class="img-wrapper">
-                <img src="assets/images/Instructores/Iglesia.jpg" alt="Roberto Atorino">
-            </div>
-            <div class="info">
-                <h4>Roberto Atorino</h4>
-                <span class="badge bg-dark border border-secondary mb-2"></span>
-                <span class="d-block small text-white-50">Kick Boxing</span>
-                <button class="btn-sedes" data-bs-toggle="modal" data-bs-target="#modalAtorino">Ver Sedes</button>
-            </div>
+        <div class="info">
+            <h4>Roberto Atorino</h4>
+             <span class="d-block small text-white-50">Kick Boxing</span>
+            <button class="btn-sedes" data-bs-toggle="modal" data-bs-target="#modalAtorino">Ver Sedes</button>
         </div>
     </div>
 </div>
 
+<div class="col-lg-3 col-md-4 col-sm-6 filter-item kick">
+    <div class="instructor-card border-0 shadow">
+        <div class="img-wrapper">
+            <img src="assets/images/HAKKYO.png" style="object-position: center; filter: grayscale(100%) brightness(0.6);" alt="Valentino Baggio">
+        </div>
+        <div class="info">
+            <h4>Valentino Baggio</h4>
+            <span class="d-block small text-white-50">Kick Boxing</span>
+            <button class="btn-sedes" data-bs-toggle="modal" data-bs-target="#modalBaggio">Ver Sedes</button>
+        </div>
+    </div>
+</div>
+</div>
+</div> </div> <div id="grid-fade" class="d-md-none"></div> 
+<div class="text-center mt-3 d-md-none">
+    <button id="btn-expand-instructors" class="btn btn-outline-danger rounded-pill px-4">
+        Ver todos los instructores <i class="fas fa-chevron-down ms-2"></i>
+    </button>
+</div>
+
+</div> <section id="resources" class="py-5 bg-darker text-center">
 
     <section id="resources" class="py-5 bg-darker text-center">
         <div class="container">
@@ -784,6 +794,34 @@
         }
     });
 </script>
+
+<script>
+    const btnExpand = document.getElementById('btn-expand-instructors');
+    const wrapper = document.getElementById('instructors-wrapper');
+    const fade = document.getElementById('grid-fade');
+
+    if(btnExpand){
+        btnExpand.addEventListener('click', function() {
+            // Comprobamos si ya está expandido
+            if (wrapper.classList.contains('expanded')) {
+                // SI ESTÁ ABIERTO -> LO CERRAMOS
+                wrapper.classList.remove('expanded');
+                btnExpand.innerHTML = 'Ver todos los instructores <i class="fas fa-chevron-down ms-2"></i>';
+                fade.style.opacity = '1'; // Vuelve la sombra
+                
+                // Opcional: Scrollear un poquito hacia arriba para que no queden perdidos
+                document.getElementById('staff').scrollIntoView({behavior: 'smooth'});
+            } else {
+                // SI ESTÁ CERRADO -> LO ABRIMOS
+                wrapper.classList.add('expanded');
+                btnExpand.innerHTML = 'Ver menos instructores <i class="fas fa-chevron-up ms-2"></i>';
+                btnExpand.style.display = 'inline-block'; // Aseguramos que siga visible
+                fade.style.opacity = '0'; // Se va la sombra
+            }
+        });
+    }
+</script>
+
 <a href="https://wa.me/5491140725517?text=Hola,%20quisiera%20más%20información%20sobre%20las%20clases." class="whatsapp-float" target="_blank" title="Chatear con nosotros">
     <i class="fab fa-whatsapp"></i>
 </a>
