@@ -91,6 +91,10 @@ h1 {
 .text-stroke {
     -webkit-text-stroke: 1px white;
     color: transparent;
+    /* --- Nuevas reglas agregadas --- */
+    font-family: var(--font-main); /* Cambiamos a Montserrat para mayor legibilidad */
+    font-weight: 900; /* Usamos el peso máximo para que tenga mucha fuerza y presencia */
+    letter-spacing: 4px; /* Separamos un poco las letras para facilitar la lectura */
 }
 
 /* DISCIPLINAS CARDS */
